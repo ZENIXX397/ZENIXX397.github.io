@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'MaplestoryOTFLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+
+  background: linear-gradient(to bottom, #c0c0c0, #c0c0c0);
+
+  height: auto !important;
+
+}
+
+body {
+
+letter-spacing: -0.05em !important;
+
+  background: transparent;
+
+  font-family: 'MaplestoryOTFLight', sans-serif;
+
+}
+header .row>div:nth-child(1)>a {
+
+  display: block;
+
+  width: 145px;
+
+  height: 50px;
+
+  background: url(https://cdn.discordapp.com/attachments/780447643708293122/781144912422895656/d4f38f27870e14d0.svg) no-repeat;
+
+  background-size: auto 50px;
+
+}
+#board-info #viewers-area .fa-user:before {
+
+ color: rgba(10, 59, 84, 0);
+
+ content: url(https://upload.tgd.kr/20190601/33350e63ec09ca5de9c9d0fe65a2b8b1.png);
+
+}
+#board-info #board-info-bottom a {
+
+  color: #ff68ef;
+
+}
+#main .menu-wrapper>a>em {
+
+  color: #ff68ef;
+
+}
+
+
+
+
+
+header .row>div:nth-child(1)>a>img {
+
+  display: none;
+
+    
+
+    filter: grayscale(100%);
+
+  opacity: 0.8;
+
+}
+header #right-search-form>input[type='text'] {
+
+  border: 3px solid #ff68ef;
+
+}
+header #header-bar>.row {
+
+  border-top: 4px solid #ff68ef;
+
+  border-right: none;
+
+  border-bottom: none;
+
+}
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+
+  width: 120px !important;
+
+}
+
+
+
+#article-list #article-list-category {
+
+  border-top: 2px solid #ff68ef;
+
+  background: gray;
+
+}
+
+
+
+#article-list #article-list-category>a {
+
+  background: gray;
+
+}
+
+
+
+#article-list>.article-list-row>.item>.list-header>span {
+
+  background-color: #ff68ef;
+
+}
+
+
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+
+  color: #ff68ef;
+
+}
+
+
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+
+  color: #ff68ef;
+
+}
+
+
+
+.pagination>.active>a,
+
+.pagination>.active>a:focus,
+
+.pagination>.active>a:hover,
+
+.pagination>.active>span,
+
+.pagination>.active>span:focus,
+
+.pagination>.active>span:hover {
+
+  background-color: #ff68ef;
+
+  border-color: #ff68ef;
+
+}
+
+
+
+.pagination>li>a:focus,
+
+.pagination>li>a:hover,
+
+.pagination>li>span:focus,
+
+.pagination>li>span:hover {
+
+  color: #ff68ef;
+
+}
+
+
+
+.pagination>li>a,
+
+.pagination>li>span {
+
+  color: #ff68ef;
+
+}
+
+
+
+#article-content-wrapper>.header {
+
+  border-top: 2px solid #ff68ef;
+
+}
+
+
+
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+
+  color: #ff68ef;
+
+}
+
+
+
+#article-info>h2 {
+
+  font-weight: bold;
+
+}
+
+
+
+#article-info>h2>span.category {
+
+  color: #ff68ef !important;
+
+}
+
+
+
+#article-reply-area>.header h5 {
+
+  color: #ff68ef;
+
+}
+
+
+
+#main .menu-wrapper>a {
+
+  padding: 0.5em 1.4em 0.5em 0.7em !important;
+
+}
+
+
+
+a {
+
+  color: #ff68ef;
+
+}
+
+
+
+span.a-badge i.fa.fa-info-circle {
+
+  color: #ff68ef;
+
+}
+#article-list>.article-list-row {
+
+  border-right: none;
+
+}
+
+
+
+#article-list #article-list-menu {
+
+  box-sizing: border-box;
+
+  width: unset;
+
+  margin: 20px;
+
+}
+
+
+
+#article-list #boardSearchForm {
+
+  padding-bottom: 20px;
+
+  height: unset;
+
+}
+
+
+
+.btn-primary {
+
+  background: #ff68ef !important;
+
+}
