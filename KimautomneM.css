@@ -88,10 +88,6 @@ div.frame>div>div[align="center"] {
   background: url(https://cdn.discordapp.com/attachments/780447643708293122/787298914604548126/AD.png) no-repeat !important;
 }
 #header-area>a>h1 {
-  background: url(https://cdn.discordapp.com/attachments/780447643708293122/782137676840304640/PinkM.png) no-repeat !important;
-  width:91px !important;
-}
-#header-area>a>h1:hover {
   background: url(https://cdn.discordapp.com/attachments/780447643708293122/782137678447640586/PinkM.png) no-repeat !important;
   width:91px !important;
 }
@@ -468,7 +464,7 @@ div.reply-menu>a:active {
   color:white !important;
 }
 #switch-platform-link:before {
-  content:"눈내리는 톤마갤 ";
+  content:"톤마갤 ";
 }
 #movetotop {
   width:48px;
