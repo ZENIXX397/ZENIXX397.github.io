@@ -5,7 +5,7 @@
     font-style: normal;
 }
 * {
-    font-family:sans-serif;
+    font-family:'MaplestoryOTFLight',sans-serif;
 }
 html {
     background: linear-gradient(to top, #101010, #404040);
