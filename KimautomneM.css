@@ -464,7 +464,7 @@ div.reply-menu>a:active {
   color:white !important;
 }
 #switch-platform-link:before {
-  content:"톤마갤 ";
+  content:"";
 }
 #movetotop {
   width:48px;
