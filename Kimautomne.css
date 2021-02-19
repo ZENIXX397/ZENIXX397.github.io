@@ -85,13 +85,6 @@ header .row > div:nth-child(1) > a {
     display: block;
     width: 145px;
     height: 50px;
-    background: url(https://cdn.discordapp.com/attachments/780447643708293122/782135026148966400/Pink.png) no-repeat;
-    background-size: auto 50px;
-}
-header .row > div:nth-child(1) > a:hover {
-    display: block;
-    width: 145px;
-    height: 50px;
     background: url(https://cdn.discordapp.com/attachments/780447643708293122/782135003722154004/Pink.png) no-repeat;
     background-size: auto 50px;
 }
@@ -144,7 +137,7 @@ div.list-writer.logged > span:hover {
     transition: 0.3s ease;
 }
 #board-info #viewers-area #viewers:after {
-    content: "명의 모쏠 트수 접속중";
+    content: "명 접속중";
     opacity: 0;
     transition: 0.3s ease;
 }
