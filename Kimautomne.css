@@ -533,7 +533,7 @@ div.reply-menu > a:focus {
     color: white !important;
 }
 .btn-outline-danger:focus {
-    color:white;
+    color:#d9534f;
 }
 #movetotop {
     width: 48px;
