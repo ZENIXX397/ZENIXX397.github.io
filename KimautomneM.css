@@ -168,7 +168,8 @@ div.list-writer.logged>span,
   border-radius: 60px;
   font-size: 12pt;
   padding-top: 18px;
-  padding-left:7px;
+  padding-left:0;
+  padding-right:0;
 }
 .vote-btn[data-type="up"]:active {
     background: #5cb85c;
@@ -180,7 +181,6 @@ div.list-writer.logged>span,
 .vote-btn[data-type="up"] span {
   display:block;
   padding-top:18px;
-  margin-left:4.5px;
   font-size: 18px;
   color: #5cb85c;
 }
@@ -197,7 +197,8 @@ div.list-writer.logged>span,
   font-size: 10pt;
   text-align:center;
   padding-top: 20px;
-  padding-left:4.5px;
+  padding-left:0;
+  padding-right:0;
 }
 .vote-btn[data-type="down"]:active {
   background: #0275d8;
@@ -209,7 +210,6 @@ div.list-writer.logged>span,
 .vote-btn[data-type="down"] span {
   display:block;
   padding-top:18px;
-  margin-left:7.5px;
   font-size: 18px;
   color: #0275d8;
 }
