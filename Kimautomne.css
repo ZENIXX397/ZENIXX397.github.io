@@ -504,12 +504,14 @@ p>a:focus {
 .btn-primary,
 .btn-primary:active {
     border-color: #ff68ef !important;
-    background: #ff68ef !important;
+    background: white !important;
+    color: #ff68ef;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-    border-color: #c0c0c0 !important;
-    background: #transparent !important;
+    border-color: #ff68ef !important;
+    background: white !important;
+    color: #ff68ef;
 }
 .btn-default:hover,
 .btn-default:focus {
@@ -525,9 +527,13 @@ div.reply-menu > a:focus {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.btn.square.btn-default.best:hover {
+.btn.square.btn-default.best:hover,
+.btn.square.btn-default.best:focus {
     background: #efc839 !important;
     color: white !important;
+}
+.btn-outline-danger:focus {
+    color:white;
 }
 #movetotop {
     width: 48px;
