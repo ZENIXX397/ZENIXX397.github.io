@@ -444,8 +444,8 @@ span>a:active {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  border-color:#797979 !important;
-  background:#c0c0c0 !important;
+  border-color:#c0c0c0 !important;
+  background:transparent !important;
 }
 .btn-default:hover,
 .btn-default:focus,
