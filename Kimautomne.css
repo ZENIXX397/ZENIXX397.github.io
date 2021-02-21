@@ -501,17 +501,17 @@ p>a:focus {
 .btn.square {
     border-radius: 30px;
 }
-.btn-primary,
-.btn-primary:active {
+.btn-primary {
     border-color: #ff68ef !important;
-    background: white !important;
-    color: #ff68ef;
+    background: #ff68ef !important;
+    color: white !important;
 }
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:active {
     border-color: #ff68ef !important;
-    background: white !important;
-    color: #ff68ef;
+    background: transparent !important;
+    color: #ff68ef !important;
 }
 .btn-default:hover,
 .btn-default:focus {
