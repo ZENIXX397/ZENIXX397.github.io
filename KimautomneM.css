@@ -73,6 +73,19 @@ span {
 .fr-box, .fr-dropdown-menu, .fr-popup {
   border-radius:10px !important;
 }
+div.fr-element.fr-view {
+  min-height: 68px !important;
+}
+span.fr-placeholder {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-top: -68px !important;
+    padding: 16px 16px 26px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    text-align: start !important;
+    position: relative !important;
+}
 .btn.btn-sm.btn-outline-danger:hover,
 .btn.btn-sm.btn-outline-danger:focus,
 .btn.btn-sm.btn-outline-danger:active {
