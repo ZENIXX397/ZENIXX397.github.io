@@ -184,6 +184,9 @@ div.list-writer.logged > span:hover {
     background: #5cb85c;
     color: white;
 }
+.vote-btn[data-type="up"]:focus {
+    color: #5cb85c;
+}
 .vote-btn[data-type="up"] span {
     display: block;
     padding-top: 18px;
@@ -209,6 +212,9 @@ div.list-writer.logged > span:hover {
 .vote-btn[data-type="down"]:hover {
     background: #0275d8;
     color: white;
+}
+.vote-btn[data-type="down"]:focus {
+    color: #0275d8;
 }
 .vote-btn[data-type="down"] span {
     display: block;
