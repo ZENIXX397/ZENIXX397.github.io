@@ -470,8 +470,10 @@ div.reply-menu>a:active {
   background:#efc839 !important;
   color:white !important;
 }
+.btn-outline-danger:hover,
 .btn-outline-danger:focus {
-    color:#d9534f;
+    background:#d9534f;
+    color:white;
 }
 #switch-platform-link:before {
   content:"";
