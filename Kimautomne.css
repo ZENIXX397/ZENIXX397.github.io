@@ -529,9 +529,9 @@ p>a:focus {
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
-    border-color: #c0c0c0;
-    background: #c0c0c0;
-    color: white;
+    border-color: #c0c0c0 !important;
+    background: #c0c0c0 !important;
+    color: white !important;
 }
 div.reply-menu > a:hover,
 div.reply-menu > a:focus {
