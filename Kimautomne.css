@@ -527,7 +527,8 @@ p>a:focus {
     color: #ff68ef !important;
 }
 .btn-default:hover,
-.btn-default:focus {
+.btn-default:focus,
+.btn-default:active {
     border-color: #c0c0c0;
     background: #c0c0c0;
     color: white;
