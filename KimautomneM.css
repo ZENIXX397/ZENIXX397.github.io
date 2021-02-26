@@ -482,6 +482,7 @@ div.reply-menu>a:active {
 .btn.square.btn-default.best:active {
   background:#efc839 !important;
   color:white !important;
+  border-color:transparent !important;
 }
 .btn-outline-danger:hover,
 .btn-outline-danger:focus {
