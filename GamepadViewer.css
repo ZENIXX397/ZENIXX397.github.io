@@ -1,0 +1,11 @@
+.controller.xbox {
+ background: url(https://cdn.discordapp.com/attachments/780447643708293122/839383498405707786/xbox.svgz);
+ \*background: url(xbox-assets/base-white.svgz);*\ }
+.xbox .button.pressed {
+    background-position-y: 0px; }
+.xbox .button {
+    opacity: 0; }
+.xbox .quadrant { opacity: 0; }
+.xbox .sticks * {
+  transform: none !important;
+}
