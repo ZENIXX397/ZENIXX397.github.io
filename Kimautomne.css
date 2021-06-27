@@ -120,6 +120,9 @@ div.reply-writer.logged:hover,
 div.list-writer.logged > span:hover {
 color: #7129da !important;
 }
+#article-content-wrapper, #article-reply-area #reply-real-area, #article-reply-area #reply-best-area {
+    padding: 0 !important;
+}
 #article-list {
 padding: 0;
 padding-bottom: 2em;
