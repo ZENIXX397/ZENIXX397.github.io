@@ -136,6 +136,9 @@ border-radius: 15px;
 #board-info > h1 > a {
 color: #ff68ef;
 }
+#board-info {
+    margin: 0 !important;
+}
 #board-info > h1 > a:hover {
 color: #7129da;
 }
