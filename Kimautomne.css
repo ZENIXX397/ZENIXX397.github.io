@@ -462,7 +462,6 @@ border-bottom-right-radius: 10px;
 #main .menu-wrapper > a:last-child:after {
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
-background-color: rgba(113, 41, 218, 0.5);
 }
 span.a-badge i.fa.fa-info-circle {
 color: #ff68ef;
