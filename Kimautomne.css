@@ -30,6 +30,10 @@ text-decoration: none !important;
 color: #ff68ef;
 transition: 0.3s ease;
 }
+a:focus {
+    outline: none;
+    outline-offset: 0;
+}
 .panel-success {
 border-radius: 10px !important;
 }
