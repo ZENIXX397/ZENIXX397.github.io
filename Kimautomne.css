@@ -571,6 +571,9 @@ border-color:transparent !important;
 background:#d9534f;
 color:white;
 }
+.btn.active, .btn:active {
+box-shadow: none;
+}
 #movetotop {
 width: 48px;
 border-radius: 50px;
