@@ -323,6 +323,9 @@ color: #ff68ef;
 background: rgba(192, 192, 192, 0.5);
 color: #ff68ef;
 }
+#article-list > .article-list-row > .item > .list-header {
+border:0;
+}
 #article-list > .article-list-row > .item > .list-header > span {
 background-color: #ff68ef;
 }
@@ -331,6 +334,35 @@ color: #ff68ef;
 }
 #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span {
 color: #ff68ef;
+}
+#article-list > .article-list-row {
+    background: linear-gradient(-45deg, #0000 50%, rgba(255, 104, 239, 0.5) 0%);
+    background-size: 225% auto;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    transition-duration: 0.5s;
+    border:0;
+}
+#article-list > .article-list-row > .item > .list-title > a:visited {
+color: #b0b0b0 !important;
+}
+#article-list > .article-list-row>.item>.v0 {
+  visibility: hidden;
+}
+#article-list > .article-list-row.notice {
+    background: linear-gradient(-45deg, #0000 50%, rgba(255, 104, 239, 0.5) 0%);
+    background-size: 225% auto;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+}
+#article-list > .article-list-row:hover {
+    background: linear-gradient(-45deg, #0000 50%, rgba(255, 104, 239, 0.5) 0%);
+    background-size: 225% auto;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+}
+#article-list > .article-list-row > .item > .list-checkbox, #article-list > .article-list-row > .item > .list-header, #article-list > .article-list-row > .item > .list-category, #article-list > .article-list-row > .item > .list-title, #article-list > .article-list-row > .item > .list-blocked, #article-list > .article-list-row > .item > .list-time, #article-list > .article-list-row > .item > .list-title > .list-category, #article-list > .article-list-row > .item > .list-title > .list-writer {
+    border: 0;
 }
 .dropdown.open .dropdown-menu,
 #writerContextMenu,
@@ -463,31 +495,6 @@ border-bottom-right-radius: 10px;
 }
 span.a-badge i.fa.fa-info-circle {
 color: #ff68ef;
-}
-#article-list > .article-list-row {
-    background: linear-gradient(-45deg, #0000 50%, rgba(255, 104, 239, 0.5) 0%);
-    background-size: 225% auto;
-    background-position-x: 100%;
-    background-repeat: no-repeat;
-    transition-duration: 0.4s;
-}
-#article-list > .article-list-row > .item > .list-title > a:visited {
-color: #b0b0b0 !important;
-}
-#article-list > .article-list-row>.item>.v0 {
-  visibility: hidden;
-}
-#article-list > .article-list-row.notice {
-    background: linear-gradient(-45deg, #0000 50%, rgba(255, 104, 239, 0.5) 0%);
-    background-size: 225% auto;
-    background-position-x: 100%;
-    background-repeat: no-repeat;
-}
-#article-list > .article-list-row:hover {
-    background: linear-gradient(-45deg, #0000 50%, rgba(255, 104, 239, 0.5) 0%);
-    background-size: 225% auto;
-    background-repeat: no-repeat;
-    background-position-x: 0;
 }
 .fr-element {
 cursor: text;
