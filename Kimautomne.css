@@ -6,6 +6,7 @@ font-style: normal;
 }
 * {
 font-family:'MaplestoryOTFLight',sans-serif;
+transition-timing-function: cubic-bezier(.25,1,1,1) !important;
 }
 html {
 background: linear-gradient(to top, #101010, #404040);
@@ -16,19 +17,12 @@ body {
 letter-spacing: -0.05em !important;
 background: transparent;
 }
-div {
-transition: 0.3s ease;
-}
-button {
-transition: 0.3s ease;
-}
-img {
-transition: 0.3s ease;
+div, button, img, a {
+transition-duration: 0.3s;
 }
 a {
 text-decoration: none !important;
 color: #ff68ef;
-transition: 0.3s ease;
 }
 a:focus {
     outline: none;
@@ -49,7 +43,7 @@ border-bottom-left-radius: 10px !important;
 border-bottom-right-radius: 10px !important;
 }
 span {
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 #writerContextMenu {}
 .alertify-logs > div {
@@ -157,18 +151,18 @@ content: url(https://cdn.discordapp.com/attachments/780447643708293122/781400554
 #board-info #viewers-area #viewers:before {
 content: "";
 opacity: 0;
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 #board-info #viewers-area #viewers:after {
 content: "명 접속중";
 opacity: 0;
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 
 #board-info #viewers-area #viewers:hover:before,
 #board-info #viewers-area #viewers:hover:after {
 opacity: 1;
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 #board-info #board-info-bottom a {
 padding: 3px;
@@ -258,12 +252,12 @@ header #right-search-form > input[type='text'] {
 width: 95px;
 border-radius: 50px;
 border: 3px solid #ff68ef;
-transition: 0.3s ease
+transition-duration: 0.3s;
 }
 header #right-search-form > input[type='text']:hover {
 transform: scale(1.05);
 border: 3px solid #7129da;
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 header #right-search-form > input[type='text']:focus {
 width: 270px;
@@ -272,13 +266,13 @@ border: 3px solid #7129da;
 }
 header #right-search-form > #right-search-btn {
 color: #ff68ef;
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 header #right-search-form > #right-search-btn:hover,
 header #right-search-form > #right-search-btn:focus {
 color: #7129da;
 transform: scale(1.1);
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 header #header-bar > .row {
 border-top: 4px solid #ff68ef;
@@ -313,7 +307,7 @@ content: "";
 position: absolute;
 left: 0px;
 transform: scaleX(0);
-transition: 0.3s;
+transition-duration: 0.3s;
 }
 #article-list #article-list-category > a:hover {
 background: rgba(192, 192, 192, 0.5);
@@ -347,7 +341,7 @@ transform: unset;
 border: 1px solid var(--color2);
 border-radius: 10px;
 box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 .dropdown .dropdown-menu,
 .input-group-btn .dropdown-menu {
@@ -357,7 +351,7 @@ opacity: 0;
 transform: scale(0);
 transform-origin: top;
 padding: 8px 0 3px 0px;
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 span.label.label-default {
 float: left;
@@ -449,7 +443,7 @@ top: 0;
 width: 100%;
 position: absolute;
 z-index: -1;
-transition: 0.5s ease;
+transition-duration: 0.36s;
 background: linear-gradient(-45deg, #0000 50%, #7129da88 0%);
 background-size: 225% auto;
 background-position-x: 100%;
@@ -457,7 +451,7 @@ background-repeat: no-repeat;
 }
 #main .menu-wrapper > a:hover:after {
 background-position-x: 0;
-transition: 0.5s ease;
+transition-duration: 0.36s;
 }
 #main .menu-wrapper > a:last-child {
 border-bottom-left-radius: 10px;
@@ -475,7 +469,7 @@ color: #ff68ef;
     background-size: 225% auto;
     background-position-x: 100%;
     background-repeat: no-repeat;
-    transition: 0.75s ease !important;
+    transition-duration: 0.4s;
 }
 #article-list > .article-list-row > .item > .list-title > a:visited {
 color: #b0b0b0 !important;
@@ -509,7 +503,7 @@ height: unset;
 }
 #article-list #boardSearchForm input {
 z-index: 20;
-transition: 0.3s ease;
+transition-duration: 0.3s;
 box-shadow: none;
 }
 #article-list #boardSearchForm input:hover {
@@ -523,7 +517,7 @@ color: #7129da;
 #article-list #boardSearchForm input:focus {
 border:1px solid #ff68ef !important;
 box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1), 0 0 2px 2px rgba(255, 104, 239, 0.6), 0 0 0 0px rgba(255, 255, 255, 0.0);
-transition: 0.3s ease;
+transition-duration: 0.3s;
 }
 @keyframes boardsearch {
 100% {
