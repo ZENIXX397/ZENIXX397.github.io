@@ -366,10 +366,14 @@ background-position-x: 0;
 }
 #article-list > .article-list-row.notice:hover {
 background: linear-gradient(-45deg, #f3f3f3 50%, rgba(255, 104, 239, 0.5) 0%);
+background-size: 225% auto;
+background-repeat: no-repeat;
 background-position-x: 0;
 }
 #article-list > .article-list-row.hot:hover {
 background: linear-gradient(-45deg, #f3eef7 50%, rgba(255, 104, 239, 0.5) 0%);
+background-size: 225% auto;
+background-repeat: no-repeat;
 background-position-x: 0;
 }
 #article-list > .article-list-row > .item > .list-title > a:visited {
