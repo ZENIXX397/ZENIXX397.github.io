@@ -574,4 +574,5 @@ color:white;
 #movetotop {
 width: 48px;
 border-radius: 50px;
+transition-duration: 0s;
 }
