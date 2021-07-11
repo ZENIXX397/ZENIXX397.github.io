@@ -214,7 +214,7 @@ padding-top: 18px;
 font-size: 18px;
 color: #5cb85c;
 }
-.vote-btn[data-type="up"]:hover span, .vote-btn[data-type="up"]:focus span {
+.vote-btn[data-type="up"]:hover span {
 opacity: 0;
 }
 .vote-btn[data-type="down"] {
