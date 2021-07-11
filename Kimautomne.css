@@ -259,13 +259,11 @@ border: 3px solid #ff68ef;
 transition-duration: 0.3s;
 }
 header #right-search-form > input[type='text']:hover {
-transform: scale(1.05);
 border: 3px solid #7129da;
 transition-duration: 0.3s;
 }
 header #right-search-form > input[type='text']:focus {
 width: 270px;
-transform: scale(1.05);
 border: 3px solid #7129da;
 }
 header #right-search-form > #right-search-btn {
@@ -607,12 +605,23 @@ border-color: #ff68ef !important;
 background: transparent !important;
 color: #ff68ef !important;
 }
+.btn-default {
+color: #333;
+border-color: #333;
+background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
+background-size: 240% auto !important;
+background-position-x: 100% !important;
+background-repeat: no-repeat !important;
+}
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
-border-color: #c0c0c0 !important;
-background: #c0c0c0 !important;
-color: white !important;
+color: #f6f6f6 !important;
+border-color: #333 !important;
+background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
+background-size: 240% auto !important;
+background-position-x: 0 !important;
+background-repeat: no-repeat !important;
 }
 div.reply-menu > a:hover,
 div.reply-menu > a:focus {
@@ -641,7 +650,7 @@ background-repeat: no-repeat !important;
 .btn-outline-danger:hover,
 .btn-outline-danger:focus {
 background-position-x: 0 !important;
-color:white;
+color:#f6f6f6;
 }
 .btn.active, .btn:active {
 box-shadow: none;
@@ -650,4 +659,10 @@ box-shadow: none;
 width: 48px;
 border-radius: 50px;
 transition-duration: 0s;
+}
+.input-group-btn > .btn {
+border-color: #333;
+}
+.input-group-btn > .btn[type="submit"] {
+background-size: 300% auto !important;
 }
