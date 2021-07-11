@@ -109,6 +109,9 @@ width:91px !important;
 .btn,.btn-group-sm>.btn, .btn-sm, .fr-tooltip {
 border-radius: 30px;
 }
+button.close > span {
+font-family: sans-serif !important;
+}
 .profile-img {
 border-radius:15px;
 }
@@ -475,20 +478,20 @@ color: #f6f6f6;
 .btn-default {
 color: #333;
 border-color: #333;
-background: linear-gradient(-45deg, #0000 50%, #333 0%);
-background-size: 225% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
+background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
+background-size: 225% auto !important;
+background-position-x: 100% !important;
+background-repeat: no-repeat !important;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
 color: #f6f6f6 !important;
 border-color: #333 !important;
-background: linear-gradient(-45deg, #0000 50%, #333 0%);
-background-size: 225% auto;
-background-position-x: 0;
-background-repeat: no-repeat;
+background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
+background-size: 225% auto !important;
+background-position-x: 0 !important;
+background-repeat: no-repeat !important;
 }
 div.reply-menu>a:hover,
 div.reply-menu>a:focus,
@@ -549,6 +552,9 @@ color:#f6f6f6;
 }
 .btn.active, .btn:active {
 box-shadow: none;
+}
+.input-group-btn > .btn {
+    border-color: #333;
 }
 .input-group-btn > .btn[type="button"] {
 background-size: 240% auto !important;
