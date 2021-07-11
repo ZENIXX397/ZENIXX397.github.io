@@ -95,8 +95,10 @@ background:#d9534f;
 color:white;
 }
 div.modal-content,
-.form-control {
+.form-control,
+.form-control:focus {
 border-radius: 10px;
+  box-shadow: none;
 }
 div.frame>div>div[align="center"] {
 width: 143px !important;
