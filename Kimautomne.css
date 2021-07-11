@@ -392,8 +392,11 @@ background-position-x: 0;
 #article-list > .article-list-row > .item > .list-title > a:visited {
 color: #b0b0b0 !important;
 }
-#article-list > .article-list-row>.item>.v0 {
+#article-list > .article-list-row>.item>.v0, #article-list > .article-list-row.active>.item>.list-header {
 visibility: hidden;
+}
+#article-list > .article-list-row.notice>.item>.v0{
+visibility:visible;
 }
 #article-list > .article-list-row > .item > .list-checkbox, #article-list > .article-list-row > .item > .list-header, #article-list > .article-list-row > .item > .list-category, #article-list > .article-list-row > .item > .list-title, #article-list > .article-list-row > .item > .list-blocked, #article-list > .article-list-row > .item > .list-time, #article-list > .article-list-row > .item > .list-title > .list-category, #article-list > .article-list-row > .item > .list-title > .list-writer {
 border: 0;
@@ -597,15 +600,20 @@ border-radius: 30px;
 }
 .btn-primary {
 border-color: #ff68ef !important;
-background: #ff68ef !important;
-color: white !important;
+background: linear-gradient(-45deg, #0000 50%, #ff68ef 0%);
+background-size: 240% auto;
+background-position-x: 100%;
+background-repeat: no-repeat;
+color: #ff68ef;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-border-color: #ff68ef !important;
-background: transparent !important;
-color: #ff68ef !important;
+background: linear-gradient(-45deg, #0000 50%, #ff68ef 0%);
+background-size: 240% auto;
+background-position-x: 0;
+background-repeat: no-repeat;
+color: #f6f6f6;
 }
 .btn-default {
 color: #333;
@@ -633,11 +641,20 @@ color: #7129da;
 border-top-right-radius: 0;
 border-bottom-right-radius: 0;
 }
+.btn.square.btn-default.best {
+background: linear-gradient(-45deg, #0000 50%, #efc839 0%) !important;
+background-size: 240% auto !important;
+background-position-x: 100% !important;
+background-repeat: no-repeat !important;
+}
 .btn.square.btn-default.best:hover,
 .btn.square.btn-default.best:focus {
-background: #efc839 !important;
-color: white !important;
-border-color:transparent !important;
+background: linear-gradient(-45deg, #0000 50%, #efc839 0%) !important;
+background-size: 240% auto !important;
+background-position-x: 0 !important;
+background-repeat: no-repeat !important;
+color: #f6f6f6 !important;
+border-color: #efc839 !important;
 }
 .btn-danger, .btn-outline-danger {
 color: #d9534f;
