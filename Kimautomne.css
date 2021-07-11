@@ -47,6 +47,7 @@ transition-duration: 0.3s;
 #writerContextMenu {}
 .alertify-logs > div {
 border-radius: 30px;
+cursor: default !important;
 }
 .dialog > div,
 .dialog > div > nav button {
@@ -596,6 +597,9 @@ span>a:focus,
 span>a:active {
 color: #7129da;
 }
+#article-list #boardSearchForm input {
+border: 1px solid #333
+}
 #article-list #boardSearchForm input:focus {
 border:1px solid #ff68ef !important;
 box-shadow: none;
@@ -628,20 +632,20 @@ color: #f6f6f6;
 .btn-default {
 color: #333;
 border-color: #333;
-background: linear-gradient(-45deg, #0000 50%, #333 0%);
-background-size: 225% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
+background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
+background-size: 225% auto !important;
+background-position-x: 100% !important;
+background-repeat: no-repeat !important;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
 color: #f6f6f6 !important;
 border-color: #333 !important;
-background: linear-gradient(-45deg, #0000 50%, #333 0%);
-background-size: 225% auto;
-background-position-x: 0;
-background-repeat: no-repeat;
+background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
+background-size: 225% auto !important;
+background-position-x: 0 !important;
+background-repeat: no-repeat !important;
 }
 div.reply-menu > a:hover,
 div.reply-menu > a:focus {
