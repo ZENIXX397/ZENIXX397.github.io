@@ -52,8 +52,26 @@ transition: 0.3s ease;
 }
 #writerContextMenu {
 }
-.alertify-logs>div {
-border-radius:30px;
+.alertify-logs > div {
+border-radius: 30px;
+cursor: default !important;
+}
+.dialog > div {
+  border-radius: 10px;
+}
+.dialog > div > nav button {
+  background: linear-gradient(-45deg, #0000 50%, #0003 0%) !important;
+  background-size: 235% auto !important;
+  background-position-x: 100% !important;
+  background-repeat: no-repeat !important;
+  border-radius: 10px !important;
+}
+.dialog > div > nav button:hover,
+.dialog > div > nav button:active {
+  background: linear-gradient(-45deg, #0000 50%, #0003 0%) !important;
+  background-size: 235% auto !important;
+  background-position-x: 0 !important;
+  background-repeat: no-repeat !important;
 }
 .article-profile-img {
 border-radius:25px;
