@@ -444,13 +444,8 @@ color: #7129da;
 }
 #article-list #boardSearchForm input:focus {
 border:1px solid #ff68ef !important;
-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1), 0 0 2px 2px rgba(255, 104, 239, 0.6), 0 0 0 0px rgba(255, 255, 255, 0.0);
+box-shadow: none;
 transition: 0.3s ease;
-}
-@keyframes boardsearch {
-100% {
-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1), 0 0 2px 2px rgba(255, 104, 239, 0.6), 0 0 0 0px rgba(255, 255, 255, 0.0);
-}
 }
 span>a:hover,
 span>a:focus,
@@ -554,6 +549,13 @@ color:#f6f6f6;
 }
 .btn.active, .btn:active {
 box-shadow: none;
+}
+.input-group-btn > .btn[type="button"] {
+background-size: 240% auto !important;
+}
+.input-group-btn > .btn[type="submit"] {
+background-size: 300% auto !important;
+margin-left: 0px;
 }
 .btn-info {
 color: #5bc0de;
