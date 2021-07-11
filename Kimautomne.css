@@ -608,20 +608,20 @@ color: #ff68ef !important;
 .btn-default {
 color: #333;
 border-color: #333;
-background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
-background-size: 240% auto !important;
-background-position-x: 100% !important;
-background-repeat: no-repeat !important;
+background: linear-gradient(-45deg, #0000 50%, #333 0%);
+background-size: 240% auto;
+background-position-x: 100%;
+background-repeat: no-repeat;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active {
 color: #f6f6f6 !important;
 border-color: #333 !important;
-background: linear-gradient(-45deg, #0000 50%, #333 0%) !important;
-background-size: 240% auto !important;
-background-position-x: 0 !important;
-background-repeat: no-repeat !important;
+background: linear-gradient(-45deg, #0000 50%, #333 0%);
+background-size: 240% auto;
+background-position-x: 0;
+background-repeat: no-repeat;
 }
 div.reply-menu > a:hover,
 div.reply-menu > a:focus {
@@ -639,8 +639,6 @@ border-color:transparent !important;
 }
 .btn-outline-danger {
 color: #d9534f;
-background-image: none;
-background-color: transparent;
 border-color: #d9534f;
 background: linear-gradient(-45deg, #0000 50%, #d9534f 0%) !important;
 background-size: 225% auto !important;
@@ -665,4 +663,22 @@ border-color: #333;
 }
 .input-group-btn > .btn[type="submit"] {
 background-size: 300% auto !important;
+margin-left: 0px;
+}
+.btn-info {
+color: #5bc0de;
+border-color: #5bc0de !important;
+background: linear-gradient(-45deg, #0000 50%, #5bc0de 0%);
+background-size: 225% auto;
+background-position-x: 100%;
+background-repeat: no-repeat;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active {
+color: #f6f6f6;
+background: linear-gradient(-45deg, #0000 50%, #5bc0de 0%);
+background-size: 225% auto;
+background-position-x: 0;
+background-repeat: no-repeat;
 }
