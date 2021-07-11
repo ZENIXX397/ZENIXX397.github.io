@@ -107,6 +107,9 @@ background-size: auto 50px;
 .fr-tooltip {
 border-radius: 30px;
 }
+button.close > span {
+    font-family: sans-serif !important;
+}
 .profile-img {
 border-radius: 15px;
 }
@@ -392,10 +395,13 @@ background-position-x: 0;
 #article-list > .article-list-row > .item > .list-title > a:visited {
 color: #b0b0b0 !important;
 }
-#article-list > .article-list-row>.item>.v0, #article-list > .article-list-row.active>.item>.list-header {
+#article-list > .article-list-row>.item>.v0 {
 visibility: hidden;
 }
-#article-list > .article-list-row.notice>.item>.v0{
+#article-list > .article-list-row.active>.item>.list-header {
+color: #ff68ef;
+}
+#article-list > .article-list-row.active>.item>.list-header, #article-list > .article-list-row.notice>.item>.v0 {
 visibility:visible;
 }
 #article-list > .article-list-row > .item > .list-checkbox, #article-list > .article-list-row > .item > .list-header, #article-list > .article-list-row > .item > .list-category, #article-list > .article-list-row > .item > .list-title, #article-list > .article-list-row > .item > .list-blocked, #article-list > .article-list-row > .item > .list-time, #article-list > .article-list-row > .item > .list-title > .list-category, #article-list > .article-list-row > .item > .list-title > .list-writer {
@@ -619,7 +625,7 @@ color: #f6f6f6;
 color: #333;
 border-color: #333;
 background: linear-gradient(-45deg, #0000 50%, #333 0%);
-background-size: 240% auto;
+background-size: 225% auto;
 background-position-x: 100%;
 background-repeat: no-repeat;
 }
@@ -629,7 +635,7 @@ background-repeat: no-repeat;
 color: #f6f6f6 !important;
 border-color: #333 !important;
 background: linear-gradient(-45deg, #0000 50%, #333 0%);
-background-size: 240% auto;
+background-size: 225% auto;
 background-position-x: 0;
 background-repeat: no-repeat;
 }
@@ -681,6 +687,9 @@ transition-duration: 0s;
 }
 .input-group-btn > .btn {
 border-color: #333;
+}
+.input-group-btn > .btn[type="button"] {
+background-size: 240% auto !important;
 }
 .input-group-btn > .btn[type="submit"] {
 background-size: 300% auto !important;
