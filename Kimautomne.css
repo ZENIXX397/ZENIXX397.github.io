@@ -15,7 +15,6 @@ cursor: default;
 background-attachment: fixed;
 }
 body {
-letter-spacing: -0.05em !important;
 background: transparent;
 }
 div, button, img, a {
@@ -225,7 +224,6 @@ opacity: 0;
 }
 .vote-btn[data-type="down"] {
 display: inline-block;
-background: transparent;
 border: solid #0275d8 1px;
 width: 60px;
 height: 60px;
@@ -235,12 +233,17 @@ text-align: center;
 padding-top: 20px;
 padding-left: 0;
 padding-right: 0;
+background: linear-gradient(-45deg, #0000 50%, #0275d8 0%);
+background-size: 250% auto;
+background-position-x: 100%;
+background-repeat: no-repeat;
 }
 .vote-btn[data-type="down"]:hover {
-background: #0275d8;
+background-position-x: 0;
 color: white;
 }
 .vote-btn[data-type="down"]:focus {
+background-position-x: 0;
 color: #0275d8;
 }
 .vote-btn[data-type="down"] span {
@@ -511,6 +514,7 @@ color:#000;
 }
 #main .menu-wrapper {
 border: 0;
+letter-spacing: -0.05em !important;
 }
 #main .menu-wrapper > div.header {
 text-align: center;
@@ -653,6 +657,12 @@ background-size: 240% auto !important;
 background-position-x: 100% !important;
 background-repeat: no-repeat !important;
 }
+.btn.square.btn-default.best.enable {
+background: linear-gradient(135deg, #0000 50%, #efc839 0%) !important;
+background-size: 240% auto !important;
+background-position-x: 100% !important;
+background-repeat: no-repeat !important;
+}
 .btn.square.btn-default.best:hover,
 .btn.square.btn-default.best:focus {
 background: linear-gradient(-45deg, #0000 50%, #efc839 0%) !important;
@@ -661,6 +671,14 @@ background-position-x: 0 !important;
 background-repeat: no-repeat !important;
 color: #f6f6f6 !important;
 border-color: #efc839 !important;
+}
+.btn.square.btn-default.best.enable:hover,
+.btn.square.btn-default.best.enable:focus {
+background: linear-gradient(135deg, #0000 50%, #efc839 0%) !important;
+background-size: 240% auto !important;
+background-position-x: 0 !important;
+background-repeat: no-repeat !important;
+color: #efc839 !important;
 }
 .btn-danger, .btn-outline-danger {
 color: #d9534f;
