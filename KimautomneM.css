@@ -58,7 +58,7 @@ border-radius:30px;
 .article-profile-img {
 border-radius:25px;
 }
-.article-profile-img:focus {
+.article-profile-img:focus, .article-profile-img:active {
 border-radius:5px;
 }
 .fr-command.fr-btn:not(.fr-active) + .fr-dropdown-menu {
