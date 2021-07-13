@@ -35,7 +35,7 @@ border-top-left-radius: 10px !important;
 border-top-right-radius: 10px !important;
 }
 .panel-body * {
-border-radius: 50px !important;
+border-radius: 25px !important;
 }
 .panel-footer {
 border-bottom-left-radius: 10px !important;
