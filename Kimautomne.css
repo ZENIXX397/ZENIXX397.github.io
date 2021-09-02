@@ -154,9 +154,9 @@ color: #ff68ef;
 }
 #board-info {
 margin: 0 !important;
-position: sticky;
+/*position: sticky;*/
 top: 0;
-background: #fff;
+background: #fffa;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 z-index: 100;
@@ -497,8 +497,8 @@ color: #ff68ef;
 }
 #article-info {
 position: sticky;
-top: 64px;
-background: #fff;
+top: 0px;
+background: #fffa;
 z-index: 100;
 }
 #article-info > h2 {
