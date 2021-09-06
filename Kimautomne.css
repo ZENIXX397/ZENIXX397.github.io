@@ -494,10 +494,10 @@ background: rgba(192, 192, 192, 0.5);
 color: #ff68ef;
 }
 #article-content-wrapper > .header {
-border-top: 2px solid #ff68efaa;
-position: sticky;
+border-top: 2px solid #ff68ef;
+/*position: sticky;*/
 top: 72px;
-background: #fffa;
+background: #fff;
 z-index: 99;
 }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
