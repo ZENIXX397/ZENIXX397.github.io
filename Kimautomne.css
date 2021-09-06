@@ -774,3 +774,6 @@ background-size: 225% auto;
 background-position-x: 0;
 background-repeat: no-repeat;
 }
+#comment-write-form-area {
+    padding: 0;
+}
