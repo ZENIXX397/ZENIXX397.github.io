@@ -79,7 +79,7 @@ left: 0 !important;
 border-top-left-radius: 10px !important;
 border-top-right-radius: 10px !important;
 position: sticky !important;
-top: 73px !important;
+top: 72px !important;
 }
 .fr-sticky-dummy {
 display: none !important;
@@ -496,7 +496,7 @@ color: #ff68ef;
 #article-content-wrapper > .header {
 border-top: 2px solid #ff68efaa;
 position: sticky;
-top: 73px;
+top: 72px;
 background: #fffa;
 z-index: 99;
 }
@@ -506,7 +506,7 @@ color: #ff68ef;
 }
 .reply-header {
 position: sticky !important;
-top: 73px !important;
+top: 72px !important;
 }
 #article-info {
 position: sticky;
