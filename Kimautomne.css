@@ -78,6 +78,11 @@ left: 0 !important;
 .fr-toolbar {
 border-top-left-radius: 10px !important;
 border-top-right-radius: 10px !important;
+position: sticky !important;
+top: 73px !important;
+}
+.fr-sticky-dummy {
+display: none !important;
 }
 .fr-wrapper {
 border-bottom-left-radius: 10px !important;
