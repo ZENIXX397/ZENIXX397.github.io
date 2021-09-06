@@ -504,6 +504,10 @@ z-index: 99;
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
 color: #ff68ef;
 }
+.reply-header {
+position: sticky !important;
+top: 73px !important;
+}
 #article-info {
 position: sticky;
 top: 0px;
