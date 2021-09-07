@@ -338,7 +338,7 @@ top: 0px;
 z-index: 18;
 }
 #article-list #article-list-category > a {
-background: #ffffff;
+background: #fff8;
 position: relative;
 }
 #article-list #article-list-category > a::after {
@@ -504,7 +504,7 @@ color: #ff68ef;
 border-top: 2px solid #ff68ef;
 position: sticky;
 top: 0px;
-background: #fff;
+background: #fff8;
 z-index: 99;
 }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
