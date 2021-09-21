@@ -78,12 +78,12 @@ left: 0 !important;
 .fr-toolbar {
 border-top-left-radius: 10px !important;
 border-top-right-radius: 10px !important;
-position: sticky !important;
+/* position: sticky !important;
 top: 0px !important;
 }
 .fr-sticky-dummy {
 display: none !important;
-}
+} */
 .fr-wrapper {
 border-bottom-left-radius: 10px !important;
 border-bottom-right-radius: 10px !important;
@@ -94,8 +94,8 @@ border-bottom-right-radius: 10px !important;
 border-radius: 10px !important;
 }
 .fr-popup {
-    top: 30px !important;
-    left: auto !important;
+/* top: 30px !important;
+left: auto !important; */
 }
 div.fr-element.fr-view {
 min-height: 118px !important;
