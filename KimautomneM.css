@@ -88,6 +88,9 @@ border-top-right-radius: 10px !important;
 position: sticky !important;
 top: 48px !important;
 }
+.fr-sticky-dummy {
+display: none !important;
+}
 .fr-wrapper {
 border-bottom-left-radius:10px !important;
 border-bottom-right-radius:10px !important;
@@ -406,6 +409,10 @@ z-index: 99;
 #article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
 #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
 color: #ff68ef;
+}
+.reply-header {
+position: sticky !important;
+top: 0px !important;
 }
 #article-info>h2 {
 font-weight: bold;
