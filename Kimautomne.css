@@ -93,6 +93,10 @@ border-bottom-right-radius: 10px !important;
 .fr-popup {
 border-radius: 10px !important;
 }
+.fr-popup {
+    top: 30px !important;
+    left: auto !important;
+}
 div.fr-element.fr-view {
 min-height: 118px !important;
 }
