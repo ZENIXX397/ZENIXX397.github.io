@@ -86,9 +86,9 @@ left:0 !important;
 border-top-left-radius: 10px !important;
 border-top-right-radius: 10px !important;
 /* position: sticky !important;
-top: 48px !important;
+top: 48px !important; */
 }
-.fr-sticky-dummy {
+/* .fr-sticky-dummy {
 display: none !important;
 } */
 .fr-wrapper {
