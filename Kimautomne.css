@@ -27,6 +27,10 @@ color: #ff68ef;
 a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
 outline: none;
 }
+.col-xs-2>div:last-child {
+  background: transparent !important;
+  padding: 0 !important;
+}
 .panel-success {
 border-radius: 10px !important;
 }
