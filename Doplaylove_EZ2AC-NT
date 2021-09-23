@@ -1,3 +1,4 @@
+/* Font Face */
 @font-face {
 font-family: 'a고딕';
 src: url('https://O2GenX.github.io/a고딕12.woff') format('woff');
@@ -22,14 +23,19 @@ src: url('https://O2GenX.github.io/Roboto-Regular.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
+
 :root {
-    --balloon-border-radius: 0;
-    --balloon-color: #f07d13;
-    --balloon-text-color: #fff;
-    --balloon-font-size: 12px;
-    --balloon-move: 4px;
-    --nt-orange-1: #fdc238;
-    --nt-orange-2: #f07d13;
+--balloon-border-radius: 0;
+--balloon-color: #f07d13;
+--balloon-text-color: #fff;
+--balloon-font-size: 12px;
+--balloon-move: 4px;
+--nt-orange-1: #fdc238;
+--nt-orange-2: #f07d13;
+--black-clear-def: #000c;
+--black-clear-1: #0003;
+--black-clear-2: #0006;
+--black-clear-3: #0009;
 }
 * {
 font-family:'Roboto', 'a고딕', sans-serif;
@@ -91,11 +97,11 @@ header #header-bar #header-top-notice strong.notice-badge {
     color:white;
 }
 .row:first-child {
-    background: #0000;
+    background: transparent;
     backdrop-filter: none;
 }
 .row {
-    background: #000a;
+    background: var(--black-clear-def);
 backdrop-filter: blur(5px);
 }
 .col-xs-2>div:last-child {
@@ -130,19 +136,19 @@ cursor: default !important;
 border-radius: 10px;
 }
 .dialog > div > nav button {
-background: linear-gradient(-45deg, #0000 50%, #0003 0%) !important;
+background: linear-gradient(-45deg, #0000 50%, var(--black-clear-1) 0%) !important;
 background-size: 235% auto !important;
 background-position-x: 100% !important;
 background-repeat: no-repeat !important;
 border-radius: 10px !important;
 }
-.dialog > div > nav button:hover,
+/* .dialog > div > nav button:hover,
 .dialog > div > nav button:active {
-background: linear-gradient(-45deg, #0000 50%, #0003 0%) !important;
+background: linear-gradient(-45deg, #0000 50%, var(--black-clear-1) 0%) !important;
 background-size: 235% auto !important;
 background-position-x: 0 !important;
 background-repeat: no-repeat !important;
-}
+} */
 .article-profile-img {
 border-radius: 25px;
 }
@@ -222,7 +228,8 @@ border-radius: 5px;
 }
 div.reply-writer.logged:hover,
 div.list-writer.logged > span:hover {
-color: #7129da !important;
+color: var(--nt-orange-2) !important;
+filter: brightness(200%);
 }
 #article-content-wrapper, #article-reply-area #reply-real-area, #article-reply-area #reply-best-area {
 padding: 0 !important;
