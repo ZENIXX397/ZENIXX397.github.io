@@ -57,7 +57,7 @@ font-family:'Roboto', 'a고딕', sans-serif;
 transition-timing-function: cubic-bezier(.25,1,1,1) !important;
 }
 html {
-background: url(https://cdn.discordapp.com/attachments/780447643708293122/890549166021959700/0b659dd63ff3086ac304157768c64bfdab84cb3a.png);
+background: url(https://cdn.discordapp.com/attachments/780447643708293122/890182254360395796/NT_PV_3.png);
 height: auto !important;
 cursor: default;
 background-attachment: fixed;
