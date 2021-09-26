@@ -804,7 +804,7 @@ background-repeat: no-repeat;
 background-position-x: 0; */
 }
 #article-list > .article-list-row > .item > .list-title > a:visited {
-color: #999 !important;
+color: #bbb !important;
 }
 #article-list > .article-list-row > .item > .list-header > strong, #article-list > .article-list-row > .item > .list-header > b {
     color: #ccc;
