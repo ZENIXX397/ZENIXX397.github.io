@@ -23,6 +23,8 @@ src: url('https://O2GenX.github.io/Roboto-Regular.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
+
+/* Animation */
 @keyframes Bright {
     0% {
         filter: brightness(100%);
@@ -37,6 +39,7 @@ font-style: normal;
     }
 }
 
+/* Body */
 :root {
 --balloon-border-radius: 0;
 --balloon-color: #f07d13;
@@ -71,15 +74,8 @@ color: white;
 div, button, img, a {
 transition-duration: 0.3s;
 }
-footer>div.container::before {
-font-family: 'HurmeGeometric3';
-content:"CSS Modified By ZENIXX";
-display: inline-block;
-color: white;
-}
-footer>div.container span {
-color: white;
-}
+
+/* Header */
 a {
 text-decoration: none !important;
 color: var(--nt-orange-2);
@@ -113,6 +109,90 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 span.a-badge>i.fa.fa-info-circle {
     color: var(--nt-orange-2);
+}
+
+/* Button */
+.btn-info {
+color: #5bc0de;
+border-color: #5bc0de !important;
+background: linear-gradient(-45deg, #0000 50%, #5bc0de 0%);
+background-size: 225% auto;
+background-position-x: 100%;
+background-repeat: no-repeat;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active {
+color: #f6f6f6;
+background: linear-gradient(-45deg, #0000 50%, #5bc0de 0%);
+background-size: 225% auto;
+background-position-x: 0;
+background-repeat: no-repeat;
+}
+.vote-btn[data-type="up"] {
+display: inline-block;
+border: solid var(--upvote) 1px;
+width: 60px !important;
+height: 60px;
+border-radius: 60px;
+font-size: 12pt;
+padding-top: 18px;
+padding-left: 0;
+padding-right: 0;
+background: linear-gradient(-45deg, #0000 50%, var(--upvote) 0%);
+background-size: 250% auto;
+background-position-x: 100%;
+background-repeat: no-repeat;
+}
+.vote-btn[data-type="up"]:hover {
+background-position-x: 0;
+color: white;
+}
+.vote-btn[data-type="up"]:focus {
+background-position-x: 0;
+color: var(--upvote);
+}
+.vote-btn[data-type="up"] span {
+display: block;
+padding-top: 18px;
+font-size: 18px;
+color: var(--upvote);
+}
+.vote-btn[data-type="up"]:hover span {
+opacity: 0;
+}
+.vote-btn[data-type="down"] {
+display: inline-block;
+border: solid var(--upvote) 1px;
+width: 60px;
+height: 60px;
+border-radius: 60px;
+font-size: 10pt;
+text-align: center;
+padding-top: 20px;
+padding-left: 0;
+padding-right: 0;
+background: linear-gradient(-45deg, #0000 50%, var(--downvote) 0%);
+background-size: 250% auto;
+background-position-x: 100%;
+background-repeat: no-repeat;
+}
+.vote-btn[data-type="down"]:hover {
+background-position-x: 0;
+color: white;
+}
+.vote-btn[data-type="down"]:focus {
+background-position-x: 0;
+color: var(--downvote);
+}
+.vote-btn[data-type="down"] span {
+display: block;
+padding-top: 18px;
+font-size: 18px;
+color: var(--downvote);
+}
+.vote-btn[data-type="down"]:hover span {
+opacity: 0;
 }
 .fa-heart {
     color: #f75563;
@@ -152,6 +232,30 @@ box-shadow: none;
     border-bottom: 2px solid var(--nt-orange-2);
     background: #0000;
     color: #fff;
+}
+#article-poll-form {
+	margin: 0 -1em;
+}
+.panel-success{
+    background: #0000;
+    border: 0;
+border-radius: 0 !important;
+}
+.panel-heading {
+border-radius: 0 !important;
+}
+.panel-body li  {
+    border: 1px solid;
+    border-image: linear-gradient(to bottom, #fff6 5px, #0000 25px);
+    border-image-slice: 1;
+    border-bottom: 2px solid var(--nt-orange-2);
+border-radius: 0 !important;
+    background: #0000;
+}
+.panel-footer {
+border-radius: 0 !important;
+    background: #0000;
+    border-top: 1px solid #ccc;
 }
 .alertify {
     backdrop-filter: blur(5px);
@@ -196,17 +300,8 @@ border-left: 1px dotted #ccc;
 .col-xs-12 {
     padding: 0;
 }
-.panel-success {
-border-radius: 0 !important;
-}
-.panel-heading {
-border-radius: 0 !important;
-}
-.panel-body * {
-border-radius: 0 !important;
-}
-.panel-footer {
-border-radius: 0 !important;
+h3 {
+    padding: 0 0.5em;
 }
 span {
 transition-duration: 0.3s;
@@ -241,31 +336,38 @@ border-top: 5px solid var(--nt-orange-2);
 background: var(--black-clear-def);
 /* position: sticky !important;
 top: 0px !important; */
+    box-shadow: none !important;
 }
 /* .fr-sticky-dummy {
 display: none !important;
 } */
+.fr-separator.fr-vs {
+    height: 38px;
+    margin: 0 2px;
+}
 .fr-wrapper {
 border-bottom-left-radius: 0px !important;
 border-bottom-right-radius: 0px !important;
 min-height: 120px;
 max-height: 570px;
 height: auto !important;
+    background: #0000 !important;
+    box-shadow: none !important;
 }
-#articleWriteForm .fr-wrapper {
-border-bottom-left-radius: 0px !important;
-border-bottom-right-radius: 0px !important;
-min-height: 360px;
-max-height: 570px;
-height: auto !important;
+.fr-box.fr-basic .fr-element {
+    color: #fff;
+}
+.fr-box.fr-basic .fr-element:hover, .fr-box.fr-basic .fr-element:focus, .fr-box.fr-basic .fr-element:active {
+    color: #000;
+    background: #fff;
 }
 .fr-box,
 .fr-dropdown-menu,
 .fr-popup {
-border-radius: 10px !important;
+border-radius: 0px !important;
 }
-.fr-toolbar .fr-command.fr-btn>.fa, .fr-popup .fr-command.fr-btn>.fa {
-    color: white;
+.fr-toolbar, .fr-toolbar .fr-command.fr-btn>.fa, .fr-popup .fr-command.fr-btn>.fa {
+    color: #fff;
 }
 .fr-toolbar .fr-command.fr-btn.fr-active>.fa, .fr-popup .fr-command.fr-btn.fr-active>.fa {
     color: var(--nt-orange-2);
@@ -273,12 +375,68 @@ border-radius: 10px !important;
 .fr-popup {
 /* top: 30px !important;
 left: auto !important; */
+    color: #fff;
+    background: var(--black-clear-def);
+        background-clip: border-box;
+    box-shadow: none;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    font-family: Arial,Helvetica,sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    margin-top: 10px;
+    z-index: 2147483635;
+    text-align: left;
+    border: 0;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: 0px;
+    border-top: 5px solid #222;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.2;
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
+    background: var(--black-clear-def);
 }
 .fr-desktop .fr-command:hover, .fr-desktop .fr-command:focus, .fr-desktop .fr-command.fr-btn-hover, .fr-desktop .fr-command.fr-expanded {
     background: #fff9;
 }
 .fr-desktop .fr-command.fr-active:hover, .fr-desktop .fr-command.fr-active:focus, .fr-desktop .fr-command.fr-active.fr-btn-hover, .fr-desktop .fr-command.fr-active.fr-expanded {
     background: #fffc;
+}
+.fr-btn-wrap button:first-child {
+    margin: 0 5px !important;
+}
+.fr-command.fr-btn.fr-options.fr-btn-hover, .fr-command.fr-btn.fr-options:hover, .fr-command.fr-btn.fr-options:focus {
+    border: 0;
+}
+.fr-popup .fr-input-line input + label, .fr-popup .fr-input-line textarea + label {
+    background: #0000;
+}
+.fr-popup .fr-input-line input.fr-not-empty:focus + label, .fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
+    color: var(--nt-orange-2);
+}
+.fr-popup .fr-input-line input[type="text"], .fr-popup .fr-input-line textarea {
+    color: #fff;
+    border-bottom: solid 2px;
+    transition-duration: 0.3s;
+}
+.fr-popup .fr-input-line input[type="text"]:focus, .fr-popup .fr-input-line textarea:focus {
+    border-bottom: solid 2px var(--nt-orange-2);
+    transition-duration: 0.3s;
 }
 div.fr-element.fr-view {
 min-height: 118px !important;
@@ -445,77 +603,28 @@ background: transparent;
 }
 #board-info-profile-img {
 float: left !important;
+    width: 48px;
 border-radius: 25px;
+}
+#board-info:before {
+    display: block;
+    position: absolute;
+content: url(https://cdn.discordapp.com/attachments/780447643708293122/891610126048440341/ASDF.svg);
+    margin-top: -7px;
+    margin-left: -7px;
+    height: 63px;
+    width: 63px;
+    filter:brightness(300%) drop-shadow(0 0 2px var(--nt-orange-2));
+    transition-duration: 0.7s;
+}
+#board-info:hover:before {
+    transform: rotate(-540deg);
+    transition-duration: 0.7s;
 }
 #board-info-profile-img:after {
     
 }
 #board-info-profile-img:hover {
-}
-.vote-btn[data-type="up"] {
-display: inline-block;
-border: solid var(--upvote) 1px;
-width: 60px !important;
-height: 60px;
-border-radius: 60px;
-font-size: 12pt;
-padding-top: 18px;
-padding-left: 0;
-padding-right: 0;
-background: linear-gradient(-45deg, #0000 50%, var(--upvote) 0%);
-background-size: 250% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
-}
-.vote-btn[data-type="up"]:hover {
-background-position-x: 0;
-color: white;
-}
-.vote-btn[data-type="up"]:focus {
-background-position-x: 0;
-color: var(--upvote);
-}
-.vote-btn[data-type="up"] span {
-display: block;
-padding-top: 18px;
-font-size: 18px;
-color: var(--upvote);
-}
-.vote-btn[data-type="up"]:hover span {
-opacity: 0;
-}
-.vote-btn[data-type="down"] {
-display: inline-block;
-border: solid var(--upvote) 1px;
-width: 60px;
-height: 60px;
-border-radius: 60px;
-font-size: 10pt;
-text-align: center;
-padding-top: 20px;
-padding-left: 0;
-padding-right: 0;
-background: linear-gradient(-45deg, #0000 50%, var(--downvote) 0%);
-background-size: 250% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
-}
-.vote-btn[data-type="down"]:hover {
-background-position-x: 0;
-color: white;
-}
-.vote-btn[data-type="down"]:focus {
-background-position-x: 0;
-color: var(--downvote);
-}
-.vote-btn[data-type="down"] span {
-display: block;
-padding-top: 18px;
-font-size: 18px;
-color: var(--downvote);
-}
-.vote-btn[data-type="down"]:hover span {
-opacity: 0;
 }
 header .row > div:nth-child(1) > a > img {
 display: none;
@@ -560,6 +669,10 @@ padding: 0 0 5em 0;
 #article-content-wrapper #article-content,
 #article-content-wrapper > .vote-area {
     border: 0;
+}
+#article-content:active {
+    background: #fff;
+    color: #000;
 }
 div.list-title > a {
 padding-right: 1px;
@@ -820,7 +933,14 @@ background: linear-gradient(-45deg, #0003 225px, #fff9 0%);
 background: linear-gradient(-45deg, #0003 225px, #d9534f99 0%);
 }
 #article-reply-area #reply-real-area .reply.active, #article-reply-area #reply-best-area .reply.active {
-    background: #fff9e599;
+    background: #0000;
+}
+#article-reply-area #reply-real-area .reply.active>.reply-header, #article-reply-area #reply-best-area .reply.active>.reply-header {
+    background: linear-gradient(-45deg, #fff6 225px, #fff9e599 0%);
+}
+#article-reply-area #reply-real-area .reply.active:active, #article-reply-area #reply-best-area .reply.active:active {
+    color: #000;
+    background: #fff9e5;
 }
 #article-reply-area #reply-real-area .reply > .reply-header > small.code, #article-reply-area #reply-best-area .reply > .reply-header > small.code {
     color: #666;
@@ -847,6 +967,21 @@ background: linear-gradient(-45deg, #0003 225px, #d9534f99 0%);
 top: 0px;
 background: #0000;
 z-index: 100;
+}
+#article-info:before {
+    display: block;
+    position: absolute;
+content: url(https://cdn.discordapp.com/attachments/780447643708293122/891610126048440341/ASDF.svg);
+    margin-top: -7px;
+    margin-left: -7px;
+    height: 63px;
+    width: 63px;
+    filter:brightness(300%) drop-shadow(0 0 2px var(--nt-orange-2));
+    transition-duration: 0.7s;
+}
+#article-info:hover:before {
+    transform: rotate(-540deg);
+    transition-duration: 0.7s;
 }
 #article-info > h2 {
     margin-left: 3em;
@@ -887,6 +1022,14 @@ background-repeat: no-repeat;
 background-position-x: 0; */
 transition-duration: 0.3s;
 }
+#article-neighbor-list > div:hover span.author {
+    border-style: solid !important;
+  border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%) !important;
+  border-image-slice: 1 !important;
+    border-width: 0 7px 0 0 !important;
+    animation: Bright 1.5s linear infinite;
+transition-duration: 0.3s;
+}
 #article-neighbor-list {
 padding:0;
 }
@@ -900,6 +1043,7 @@ padding-left: 0.5em;
 #article-neighbor-list > div > span.author {
 padding-right: 1em;
 color:#fff;
+    transition-duration: 0.3s;
 }
 #main .menu-wrapper {
 border: 0;
@@ -979,9 +1123,14 @@ padding-bottom: 20px;
 height: unset;
 }
 #article-list #boardSearchForm input {
+border: 1px solid #fff9;
 z-index: 20;
 transition-duration: 0.3s;
 box-shadow: none;
+}
+
+#article-list #boardSearchForm .form-control {
+    height: 31.15px;
 }
 #article-list #boardSearchForm input:hover {
 border:1px solid var(--nt-orange-2) !important;
@@ -992,7 +1141,6 @@ span>a:active {
 color: var(--nt-orange-1);
 }
 #article-list #boardSearchForm input {
-border: 1px solid #fff9;
 }
 #article-list #boardSearchForm input:focus {
 border:1px solid var(--nt-orange-2) !important;
@@ -1099,6 +1247,7 @@ color:#f6f6f6;
 .btn.active, .btn:active {
 box-shadow: none;
 }
+/* Footer */
 #movetotop {
     background: url(https://cdn.discordapp.com/attachments/780447643708293122/890924545211498506/TOP_.png);
     height: 48px;
@@ -1110,6 +1259,21 @@ transition-duration: 0s;
 #movetotop > img {
     display: none;
 }
+footer>div.container::before {
+font-family: 'HurmeGeometric3';
+content:"CSS Modified By";
+display: inline-block;
+color: white;
+}
+footer>div.container span:before {
+font-family: 'HurmeGeometric3';
+content:"ZENIXX";
+display: inline-block;
+color: white;
+}
+footer>div.container span {
+color: white;
+}
 .input-group-btn > .btn {
 border-color: #fff9;
 }
@@ -1119,23 +1283,6 @@ background-size: 240% auto !important;
 .input-group-btn > .btn[type="submit"] {
 background-size: 300% auto !important;
 margin-left: 0px;
-}
-.btn-info {
-color: #5bc0de;
-border-color: #5bc0de !important;
-background: linear-gradient(-45deg, #0000 50%, #5bc0de 0%);
-background-size: 225% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
-}
-.btn-info:hover,
-.btn-info:focus,
-.btn-info:active {
-color: #f6f6f6;
-background: linear-gradient(-45deg, #0000 50%, #5bc0de 0%);
-background-size: 225% auto;
-background-position-x: 0;
-background-repeat: no-repeat;
 }
 #comment-write-form-area {
 padding: 0;
