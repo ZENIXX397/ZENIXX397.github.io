@@ -1,5 +1,15 @@
 /* Font Face */
 @font-face {
+font-family: 'MaplestoryOTFLight';
+src: url('https://o2genx.github.io/K5T.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+* {
+font-family:'MaplestoryOTFLight',sans-serif;
+transition-timing-function: cubic-bezier(.25,1,1,1) !important;
+}
+@font-face {
 font-family: 'a고딕';
 src: url('https://O2GenX.github.io/a고딕12.woff') format('woff');
 font-weight: normal;
@@ -54,10 +64,6 @@ font-style: normal;
 --black-clear-3: #0009;
 --upvote: #5cb85c;
 --downvote: #0275d8;
-}
-* {
-font-family:'Roboto', 'a고딕', sans-serif;
-transition-timing-function: cubic-bezier(.25,1,1,1) !important;
 }
 html {
 background: url(https://cdn.discordapp.com/attachments/780447643708293122/890182254360395796/NT_PV_3.png);
