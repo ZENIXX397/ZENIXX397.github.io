@@ -630,7 +630,7 @@ background: linear-gradient(-45deg, #0004 60px, #fff0 0%);
 /* background-size: 225% auto;
 background-position-x: 100%;
 background-repeat: no-repeat; */
-transition-duration: 0.6s;
+transition-duration: 0.3s;
 }
 #article-list > .article-list-row.notice {
 background: linear-gradient(-45deg, #fff2 60px, #fff4 0%);
@@ -873,7 +873,7 @@ background: linear-gradient(-45deg, #0004 150px, #fff0 0%);
 /* background-size: 225% auto;
 background-repeat: no-repeat;
 background-position-x: 100%; */
-transition-duration: 0.6s;
+transition-duration: 0.3s;
 }
 #article-neighbor-list > div:hover {
 background: linear-gradient(-90deg, #444 60px, #000 100%);
@@ -885,7 +885,7 @@ background: linear-gradient(-90deg, #444 60px, #000 100%);
 /* background-size: 225% auto;
 background-repeat: no-repeat;
 background-position-x: 0; */
-transition-duration: 0.6s;
+transition-duration: 0.3s;
 }
 #article-neighbor-list {
 padding:0;
