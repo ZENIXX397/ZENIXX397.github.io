@@ -784,9 +784,6 @@ background-position-x: 0; */
 #article-list > .article-list-row > .item > .list-title > a:visited {
 color: #bbb !important;
 }
-#article-list > .article-list-row > .item > .list-title > a:after:visited {
-content: " (Visited)";
-}
 #article-list > .article-list-row > .item > .list-header > strong, #article-list > .article-list-row > .item > .list-header > b {
     color: #ccc;
     font-weight: bold;
