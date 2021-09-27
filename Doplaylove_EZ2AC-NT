@@ -377,36 +377,9 @@ border-radius: 0px !important;
 left: auto !important; */
     color: #fff;
     background: var(--black-clear-def);
-        background-clip: border-box;
     box-shadow: none;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    font-family: Arial,Helvetica,sans-serif;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    margin-top: 10px;
-    z-index: 2147483635;
-    text-align: left;
+    border-radius: 0px;
     border: 0;
-        border-top-color: currentcolor;
-        border-top-style: none;
-        border-top-width: 0px;
-    border-top: 5px solid #222;
-    text-rendering: optimizelegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.2;
 }
 .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
     background: var(--black-clear-def);
