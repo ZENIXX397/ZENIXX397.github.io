@@ -266,8 +266,6 @@ cursor: default !important;
 .alertify .alert > *, .alertify .dialog > * {
     background: var(--black-clear-def);
 }
-.dialog .nav {
-}
 .row, header>#header-bar.container>.row:first-child {
     background: var(--black-clear-def);
 }
@@ -448,10 +446,6 @@ font-family: sans-serif !important;
 .profile-img {
 border-radius: 15px;
 }
-.profile-img:hover {
-}
-img.reply-writer-image:hover {
-}
 div.reply-writer.logged:hover,
 div.list-writer.logged > span:hover {
 filter: brightness(125%);
@@ -510,8 +504,6 @@ color: var(--nt-orange-1);
 [aria-label][data-balloon-pos][data-balloon-pos="down"]::after,
 [aria-label][data-balloon-pos][data-balloon-pos="down"]::before {
 border-radius: 30px;
-}
-.fa.fa-trophy {
 }
 #board-info #score-area .fa-trophy::before {
 content: url(https://cdn.discordapp.com/attachments/780447643708293122/890176551440777276/BPMIcon.png);
@@ -593,11 +585,6 @@ content: url(https://cdn.discordapp.com/attachments/780447643708293122/891610126
 #board-info:hover:before {
     transform: rotate(-540deg);
     transition-duration: 0.7s;
-}
-#board-info-profile-img:after {
-    
-}
-#board-info-profile-img:hover {
 }
 header .row > div:nth-child(1) > a > img {
 display: none;
@@ -867,9 +854,6 @@ background-color: #0000;
 color: var(--nt-orange-2);
 border-color: var(--nt-orange-2);
 }
-.pagination > .active > span,
-.pagination > .active > span:focus,
-.pagination > .active > span:hover {}
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
@@ -961,7 +945,6 @@ content: url(https://cdn.discordapp.com/attachments/780447643708293122/891610126
 font-weight: bold;
 white-space: normal;
 }
-#article-info > h2 > span.category {}
 #article-reply-area > .header h5 {
 color: var(--nt-orange-2);
 }
@@ -1075,10 +1058,6 @@ background-repeat: no-repeat;
 background-position-x: 0;
 transition-duration: 0.36s;
 }
-#main .menu-wrapper > a:last-child {
-}
-#main .menu-wrapper > a:last-child:after {
-}
 .fr-element {
 cursor: text;
 }
@@ -1112,8 +1091,6 @@ span>a:hover,
 span>a:focus,
 span>a:active {
 color: var(--nt-orange-1);
-}
-#article-list #boardSearchForm input {
 }
 #article-list #boardSearchForm input:focus {
 border:1px solid var(--nt-orange-2) !important;
