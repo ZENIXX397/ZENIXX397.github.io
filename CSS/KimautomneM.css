@@ -53,8 +53,6 @@ border-bottom-right-radius: 10px !important;
 span {
 transition: 0.3s ease;
 }
-#writerContextMenu {
-}
 .alertify-logs > div {
 border-radius: 30px;
 cursor: default !important;
@@ -161,10 +159,6 @@ padding-bottom:2em;
 #article-list #article-list-menu>.btn.cog {
 border-radius: 15px;
 }
-#article-list #article-option-area-toggle-btn {
-}
-#article-list #article-option-area-toggle-btn:active {
-}
 #board-info {
 background: #fff !important;
 }
@@ -179,10 +173,6 @@ border-radius:30px;
 }
 #board-info #viewers-area .fa-user:before {
 content: url(https://cdn.discordapp.com/attachments/780447643708293122/781400554970677268/Gonik.gif);
-}
-#board-info #viewers-area {
-}
-#board-info #viewers-area #viewers:before {
 }
 #board-info #viewers-area #viewers:after {
 content:"명 접속중";
@@ -366,8 +356,6 @@ span.name {
 padding-left:5px;
 padding-right:5px;
 }
-.dropdown-menu>li>a {
-}
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:active {
@@ -384,11 +372,6 @@ border-color: #ff68ef;
 background-color:rgba(192, 192, 192, 0.3);
 color:#ff68ef;
 border-color:#c0c0c0;
-}
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover,
-.pagination>.active>span:active {
 }
 .pagination>li>a:focus,
 .pagination>li>a:hover,
@@ -420,8 +403,6 @@ top: 0px !important;
 }
 #article-info>h2 {
 font-weight: bold;
-}
-#article-info>h2>span.category {
 }
 #article-reply-area>.header h5 {
 color: #ff68ef;
