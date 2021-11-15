@@ -1,6 +1,6 @@
 @font-face {
 font-family: 'MaplestoryOTFLight';
-src: url('https://o2genx.github.io/K5T.woff') format('woff');
+src: url('https://zenixx397.github.io/Fonts/MaplestoryLight.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 }
@@ -48,7 +48,6 @@ border-bottom-right-radius: 10px !important;
 span {
 transition-duration: 0.3s;
 }
-#writerContextMenu {}
 .alertify-logs > div {
 border-radius: 30px;
 cursor: default !important;
@@ -96,10 +95,6 @@ border-bottom-right-radius: 10px !important;
 .fr-dropdown-menu,
 .fr-popup {
 border-radius: 10px !important;
-}
-.fr-popup {
-/* top: 30px !important;
-left: auto !important; */
 }
 div.fr-element.fr-view {
 min-height: 118px !important;
@@ -163,9 +158,6 @@ border-radius: 15px;
 position: sticky;
 float: right;
 }
-#article-list #article-option-area-toggle-btn {}
-#article-list #article-option-area-toggle-btn:hover {}
-#board-info {}
 #board-info > h1 > a {
 color: #ff68ef;
 }
@@ -188,7 +180,6 @@ border-radius: 30px;
 #board-info #viewers-area .fa-user:before {
 content: url(https://cdn.discordapp.com/attachments/780447643708293122/781400554970677268/Gonik.gif);
 }
-#board-info #viewers-area {}
 #board-info #viewers-area #viewers:before {
 content: "";
 opacity: 0;
@@ -479,7 +470,6 @@ span.name {
 padding-left: 5px;
 padding-right: 5px;
 }
-.dropdown-menu > li > a {}
 .dropdown-menu > li > a:hover {
 background: transparent;
 transform: scale(1.1);
@@ -494,9 +484,6 @@ background-color: rgba(192, 192, 192, 0.3);
 color: #ff68ef;
 border-color: #c0c0c0;
 }
-.pagination > .active > span,
-.pagination > .active > span:focus,
-.pagination > .active > span:hover {}
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
@@ -533,7 +520,6 @@ z-index: 100;
 font-weight: bold;
 white-space: normal;
 }
-#article-info > h2 > span.category {}
 #article-reply-area > .header h5 {
 color: #ff68ef;
 }
@@ -591,7 +577,6 @@ border: 0 !important;
 display: none;
 }
 #main .menu-wrapper a:hover {
-background: #c0c0c0;
 text-align: center;
 padding: 0em 0em 0em 0em !important;
 font-size: 19pt;
