@@ -162,6 +162,27 @@ border-radius: 15px;
 #board-info {
 background: #fff !important;
 }
+#nav-overlay {
+    background: rgba(0,0,0,0.8);
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 0.3s;
+}
+#nav-overlay.hide {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.3s;
+}
+nav#nav {
+    width: 300px;
+    transition-duration: 0.3s;
+}
+nav#nav.hide {
+    display: block !important;
+    left: -300px;
+    transition-duration: 0.3s;
+}
 #board-info>h1>a {
 color:#ff68ef;
 }
