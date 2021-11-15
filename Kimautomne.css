@@ -572,25 +572,25 @@ color:#000;
 border: 0;
 letter-spacing: -0.05em !important;
 }
-#main .menu-wrapper > div.header {
+#main .menu-wrapper div.header {
 text-align: center;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 padding: 0.5em 1.4em 0.5em 0.7em !important;
 }
-#main .menu-wrapper > a {
+#main .menu-wrapper a {
 text-align: center;
 padding: 0.5em 1.4em 0.5em 0.7em !important;
 word-break: keep-all;
 position: relative;
 z-index: 2;
 box-sizing: border-box;
-border: 0;
+border: 0 !important;
 }
 #main .menu-wrapper div.spacer {
 display: none;
 }
-#main .menu-wrapper > a:hover {
+#main .menu-wrapper a:hover {
 background: #c0c0c0;
 text-align: center;
 padding: 0em 0em 0em 0em !important;
@@ -598,7 +598,7 @@ font-size: 19pt;
 word-break: keep-all;
 background: white;
 }
-#main .menu-wrapper > a:after {
+#main .menu-wrapper a:after {
 content: "";
 height: 100%;
 left: 0;
@@ -612,15 +612,15 @@ background-size: 225% auto;
 background-position-x: 100%;
 background-repeat: no-repeat;
 }
-#main .menu-wrapper > a:hover:after {
+#main .menu-wrapper a:hover:after {
 background-position-x: 0;
 transition-duration: 0.36s;
 }
-#main .menu-wrapper > a:last-child {
+#main .menu-wrapper a:last-child {
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 }
-#main .menu-wrapper > a:last-child:after {
+#main .menu-wrapper a:last-child:after {
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 }
