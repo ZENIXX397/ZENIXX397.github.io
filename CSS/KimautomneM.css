@@ -4,7 +4,7 @@ src:url('https://zenixx397.github.io/MaplestoryLight.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 }
-html>body>div>div>div:first-child {
+html>body>div>div>div[style="width: 320px; height: 100px;background: url(https://upload.tgd.kr/banner/320x100n.jpg) no-repeat center center;"] {
       background: url(https://cdn.discordapp.com/attachments/780447643708293122/787298914604548126/AD.png) no-repeat center center !important;
 }
 * {
