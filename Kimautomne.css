@@ -587,7 +587,7 @@ z-index: 2;
 box-sizing: border-box;
 border: 0;
 }
-#main .menu-wrapper > div.spacer {
+#main .menu-wrapper div.spacer {
 display: none;
 }
 #main .menu-wrapper > a:hover {
