@@ -596,7 +596,7 @@ text-align: center;
 padding: 0em 0em 0em 0em !important;
 font-size: 19pt;
 word-break: keep-all;
-background: white;
+background: white !important;
 }
 #main .menu-wrapper a:after {
 content: "";
