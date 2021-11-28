@@ -257,7 +257,7 @@ border-radius: 5px;
 }
 .vote-btn[data-type="up"] > .fa-thumbs-up:after {
     content: " 개념";
-    font-family: 'Roboto', 'a고딕', sans-serif;
+    font-family: 'MaplestoryOTFLight';
     font-size: 16px;
     vertical-align: middle;
 }
@@ -300,7 +300,7 @@ border-radius: 5px;
 }
 .vote-btn[data-type="down"] > .fa-thumbs-down:after {
     content: " 비추";
-    font-family: 'Roboto', 'a고딕', sans-serif;
+    font-family: 'MaplestoryOTFLight';
     font-size: 16px;
     vertical-align: middle;
 }
