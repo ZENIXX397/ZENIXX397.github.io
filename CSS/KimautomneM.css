@@ -1,3 +1,20 @@
+:root {
+    --balloon-border-radius: 0;
+    --balloon-color: #f07d13;
+    --balloon-text-color: #fff;
+    --balloon-font-size: 12px;
+    --balloon-move: 4px;
+    --nt-orange-1: #fdc238;
+    --nt-orange-2: #f07d13;
+    --black-clear-def: #000c;
+    --black-clear-1: #0003;
+    --black-clear-2: #0006;
+    --black-clear-3: #0009;
+    --upvote: #3b4890;
+    --upvote-1: #ffcc00;
+    --upvote-2: #717baf;
+    --downvote: #aaaaaa;
+}
 @font-face {
 font-family: 'MaplestoryOTFLight';
 src:url('https://zenixx397.github.io/Maplestory-Light.woff') format('woff');
@@ -102,15 +119,22 @@ border-radius:10px !important;
 div.fr-element.fr-view {
 min-height: 68px !important;
 }
-span.fr-placeholder {
-font-size: 14px !important;
-line-height: 20px !important;
-margin-top: -68px !important;
-padding: 16px 16px 26px !important;
-margin-left: 0px !important;
-margin-right: 0px !important;
-text-align: start !important;
-position: relative !important;
+.fr-placeholder {
+    font-size: 0 !important;
+    line-height: 20px !important;
+    margin-top: -118px !important;
+    padding: 16px 16px 26px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: start !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+.fr-placeholder:before{
+    white-space: pre-wrap;
+    font-size:14px;
+    letter-spacing:-0.5px;
+    content:"내용을 작성해주세요.\A완성형 폰트의 문제로 인해 일부 글자가 보이지 않을 수 있습니다.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며 \A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다."
 }
 .btn.btn-sm.btn-outline-danger:hover,
 .btn.btn-sm.btn-outline-danger:focus,
@@ -218,69 +242,84 @@ border-radius:25px;
 border-radius:5px;
 }
 .vote-btn[data-type="up"] {
-display: inline-block;
-border: solid #5cb85c 1px;
-width:60px !important;
-height: 60px;
-border-radius: 60px;
-font-size: 12pt;
-padding-top: 18px;
-padding-left:0;
-padding-right:0;
-background: linear-gradient(-45deg, #0000 50%, #5cb85c 0%);
-background-size: 250% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
+    display: inline-block;
+    border: solid var(--upvote) 1px;
+    width: 60px !important;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 0;
+    padding: 0;
+    color: var(--upvote);
+    background: linear-gradient(-45deg, #0000 50%, var(--upvote) 0%);
+    background-size: 250% auto;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    line-height: 60px;
+}
+.vote-btn[data-type="up"] > .fa-thumbs-up:before {
+    content: "\f005";
+    font-size: 16px;
+    vertical-align: middle;
+}
+.vote-btn[data-type="up"] > .fa-thumbs-up:after {
+    content: " 개념";
+    font-family: 'Roboto', 'a고딕', sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
 }
 .vote-btn[data-type="up"]:hover, .vote-btn[data-type="up"]:active {
-background-position-x: 0;
-color: white;
+    color: white;
+    background-position-x: 0;
 }
 .vote-btn[data-type="up"]:focus {
-background-position-x: 0;
-color: #5cb85c;
+    background-position-x: 0;
+    color: var(--upvote-1);
 }
 .vote-btn[data-type="up"] span {
-display:block;
-padding-top:18px;
-font-size: 18px;
-color: #5cb85c;
-}
-.vote-btn[data-type="up"]:active span {
-opacity:0;
+    display: block;
+    line-height: 16px;
+    color: var(--upvote);
+    font-size: 16px;
 }
 .vote-btn[data-type="down"] {
-display: inline-block;
-border: solid #0275d8 1px;
-width: 60px;
-height: 60px;
-border-radius: 60px;
-font-size: 10pt;
-text-align:center;
-padding-top: 20px;
-padding-left:0;
-padding-right:0;
-background: linear-gradient(-45deg, #0000 50%, #0275d8 0%);
-background-size: 250% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
+    display: inline-block;
+    border: solid var(--downvote) 1px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 0;
+    padding: 0;
+    color: var(--downvote);
+    background: linear-gradient(-45deg, #0000 50%, var(--downvote) 0%);
+    background-size: 250% auto;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    line-height: 60px;
+}
+.vote-btn[data-type="down"] > .fa-thumbs-down:before {
+    content: "\f00d";
+    font-size: 16px;
+    vertical-align: middle;
+}
+.vote-btn[data-type="down"] > .fa-thumbs-down:after {
+    content: " 비추";
+    font-family: 'Roboto', 'a고딕', sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
 }
 .vote-btn[data-type="down"]:hover, .vote-btn[data-type="down"]:active {
-background-position-x: 0;
-color: white;
+    color: white;
+    background-position-x: 0;
 }
 .vote-btn[data-type="down"]:focus {
-background-position-x: 0;
-color: #0275d8;
+    background-position-x: 0;
+    color: #d00;
 }
 .vote-btn[data-type="down"] span {
-display:block;
-padding-top:18px;
-font-size: 18px;
-color: #0275d8;
-}
-.vote-btn[data-type="down"]:active span {
-opacity:0;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--downvote);
 }
 header .row>div:nth-child(1)>a>img {
 display: none;
