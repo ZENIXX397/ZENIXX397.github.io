@@ -275,9 +275,6 @@ border-radius: 5px;
     color: var(--upvote);
     font-size: 16px;
 }
-.vote-btn[data-type="up"]:hover span {
-    opacity: 0;
-}
 .vote-btn[data-type="down"] {
     display: inline-block;
     border: solid var(--downvote) 1px;
@@ -317,9 +314,6 @@ border-radius: 5px;
     font-size: 16px;
     line-height: 16px;
     color: var(--downvote);
-}
-.vote-btn[data-type="down"]:hover span {
-    opacity: 0;
 }
 header .row > div:nth-child(1) > a > img {
 display: none;
