@@ -1,3 +1,19 @@
+:root {
+    --balloon-border-radius: 0;
+    --balloon-color: #f07d13;
+    --balloon-text-color: #fff;
+    --balloon-font-size: 12px;
+    --balloon-move: 4px;
+    --nt-orange-1: #fdc238;
+    --nt-orange-2: #f07d13;
+    --black-clear-def: #000c;
+    --black-clear-1: #0003;
+    --black-clear-2: #0006;
+    --black-clear-3: #0009;
+    --upvote: #3b4890;
+    --upvote-1: #ffcc00;
+    --downvote: #aaaaaa;
+}
 @font-face {
 font-family: 'MaplestoryOTFLight';
 src: url('https://zenixx397.github.io/Fonts/Maplestory-Light.woff') format('woff');
@@ -219,69 +235,88 @@ border-radius: 25px;
 border-radius: 5px;
 }
 .vote-btn[data-type="up"] {
-display: inline-block;
-border: solid #5cb85c 1px;
-width: 60px !important;
-height: 60px;
-border-radius: 60px;
-font-size: 12pt;
-padding-top: 18px;
-padding-left: 0;
-padding-right: 0;
-background: linear-gradient(-45deg, #0000 50%, #5cb85c 0%);
-background-size: 250% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
+    display: inline-block;
+    border: solid var(--upvote) 1px;
+    width: 60px !important;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(-45deg, #0000 50%, var(--upvote) 0%);
+    background-size: 250% auto;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    line-height: 60px;
+}
+.vote-btn[data-type="up"] > .fa-thumbs-up:before {
+    content: "\f005";
+    font-size: 16px;
+    vertical-align: middle;
+}
+.vote-btn[data-type="up"] > .fa-thumbs-up:after {
+    content: " 개추";
+    font-family:'MaplestoryOTFLight',sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
 }
 .vote-btn[data-type="up"]:hover {
-background-position-x: 0;
-color: white;
+    background-position-x: 0;
 }
 .vote-btn[data-type="up"]:focus {
-background-position-x: 0;
-color: #5cb85c;
+    background-position-x: 0;
+    color: var(--upvote-1);
 }
 .vote-btn[data-type="up"] span {
-display: block;
-padding-top: 18px;
-font-size: 18px;
-color: #5cb85c;
+    display: block;
+    line-height: 16px;
+    color: white;
+    font-size: 16px;
 }
 .vote-btn[data-type="up"]:hover span {
-opacity: 0;
+    opacity: 0;
 }
 .vote-btn[data-type="down"] {
-display: inline-block;
-border: solid #0275d8 1px;
-width: 60px;
-height: 60px;
-border-radius: 60px;
-font-size: 10pt;
-text-align: center;
-padding-top: 20px;
-padding-left: 0;
-padding-right: 0;
-background: linear-gradient(-45deg, #0000 50%, #0275d8 0%);
-background-size: 250% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
+    display: inline-block;
+    border: solid var(--downvote) 1px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(-45deg, #0000 50%, var(--downvote) 0%);
+    background-size: 250% auto;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    line-height: 60px;
+}
+.vote-btn[data-type="down"] > .fa-thumbs-down:before {
+    content: "\f00d";
+    font-size: 16px;
+    vertical-align: middle;
+}
+.vote-btn[data-type="down"] > .fa-thumbs-down:after {
+    content: " 비추";
+    font-family:'MaplestoryOTFLight',sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
 }
 .vote-btn[data-type="down"]:hover {
-background-position-x: 0;
-color: white;
+    background-position-x: 0;
 }
 .vote-btn[data-type="down"]:focus {
-background-position-x: 0;
-color: #0275d8;
+    background-position-x: 0;
+    color: #d00;
 }
 .vote-btn[data-type="down"] span {
-display: block;
-padding-top: 18px;
-font-size: 18px;
-color: #0275d8;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
 }
 .vote-btn[data-type="down"]:hover span {
-opacity: 0;
+    opacity: 0;
 }
 header .row > div:nth-child(1) > a > img {
 display: none;
