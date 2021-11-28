@@ -12,6 +12,7 @@
     --black-clear-3: #0009;
     --upvote: #3b4890;
     --upvote-1: #ffcc00;
+    --upvote-2: #717baf;
     --downvote: #aaaaaa;
 }
 @font-face {
@@ -256,11 +257,12 @@ border-radius: 5px;
 }
 .vote-btn[data-type="up"] > .fa-thumbs-up:after {
     content: " 개추";
-    font-family:'MaplestoryOTFLight',sans-serif;
+    font-family: 'Roboto', 'a고딕', sans-serif;
     font-size: 16px;
     vertical-align: middle;
 }
 .vote-btn[data-type="up"]:hover {
+    color: white;
     background-position-x: 0;
 }
 .vote-btn[data-type="up"]:focus {
@@ -298,11 +300,12 @@ border-radius: 5px;
 }
 .vote-btn[data-type="down"] > .fa-thumbs-down:after {
     content: " 비추";
-    font-family:'MaplestoryOTFLight',sans-serif;
+    font-family: 'Roboto', 'a고딕', sans-serif;
     font-size: 16px;
     vertical-align: middle;
 }
 .vote-btn[data-type="down"]:hover {
+    color: white;
     background-position-x: 0;
 }
 .vote-btn[data-type="down"]:focus {
