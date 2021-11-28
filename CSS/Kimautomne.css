@@ -256,7 +256,7 @@ border-radius: 5px;
     vertical-align: middle;
 }
 .vote-btn[data-type="up"] > .fa-thumbs-up:after {
-    content: " 개추";
+    content: " 개념";
     font-family: 'Roboto', 'a고딕', sans-serif;
     font-size: 16px;
     vertical-align: middle;
