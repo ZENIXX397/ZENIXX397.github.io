@@ -8,6 +8,10 @@
 	animation-timing-function: cubic-bezier(.25,.25,.34,.92);
 }
 
+.slideInRight {
+	animation-duration: 0.7s;
+	animation-timing-function: cubic-bezier(.25,.25,.34,.92);
+}
 .candidate:last-child {
 	animation-play-state: paused; /* 룰렛 애니메이션 비활성화 */
 }
@@ -33,7 +37,31 @@
 		transform: translateY(-165px);
 	}
 }
-
+@keyframes slideInRight { /* 스타트 애니메이션 */
+	from {
+		opacity: 0;
+		transform: translateX(160vh);
+	} 30% {
+	} to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@font-face {
+    font-family: 'Hurme';
+    font-style: normal;
+    src: url('https://ZENIXX397.github.io/Fonts/DIN.woff2') format('woff2');
+    src: url('https://ZENIXX397.github.io/Fonts/DIN.woff') format('woff');
+}
+@font-face {
+    font-family: 'a견고딕';
+    font-style: normal;
+    src: url('https://ZENIXX397.github.io/Fonts/a고딕12.woff2') format('woff2');
+    src: url('https://ZENIXX397.github.io/Fonts/a고딕12.woff') format('woff');
+}
+* {
+  font-family: 'Hurme', 'a견고딕' !important;
+}
 #alertbox {
 	height: auto;
 }
@@ -44,6 +72,7 @@
 	left: auto; /* 영상 오른쪽 정렬 */
 	right: 0; /* 영상 오른쪽 정렬 */
 	max-width: 100%;
+    opacity:0.75;
 }
 
 #media-label {
@@ -58,6 +87,7 @@
 }
 
 #body.layout-above #media-label { /* 영상 후원 하단 메시지 */
+    animation: slideInRight 1s;
 	top: 90vh;
 	height:7vh;
 	width: 158vh;
@@ -66,23 +96,22 @@
 	right: 0;
 	padding-left: 1vh;
 	padding-right: 1vh;
-	background: rgba(192, 192, 192, 1);
-	color: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+}
+#body.layout-above #media-label>span {
 }
 
 #media-label-loading {
 	display: none;
 }
-
-#Connecting,
+#connecting,
 #pausing {
-	animation-name: slideInDown;
-	animation-delay: -0.2s;
-	animation-duration: 1s;
+  display:none;
 }
 
 #image-wrap { /* 후원 이미지 표시 */
-	animation-name: slideInDown;
+	animation: slideInDown;
 	transition-delay: 0.4s;
 	animation-duration: 1.1s;
 	position:fixed;
@@ -93,10 +122,11 @@
 }
 
 #alert-image {
+	display:none;
 }
 
 #body.layout-above #text-wrap {
-	background: rgba(192, 192, 192, 1);	/* 배경 색상 */
+	background: rgba(0, 0, 0, 0.5);	/* 배경 색상 */
 }
 
 #alert-text {
