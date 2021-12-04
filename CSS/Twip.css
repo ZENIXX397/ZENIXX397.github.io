@@ -1,0 +1,145 @@
+.slideInDown { /* 스타트 애니메이션 조정 */
+	animation-duration: 0.7s;
+	animation-timing-function: cubic-bezier(.25,.25,.34,.92);
+}
+
+.slideOutUp { /* 엔드 애니메이션 조정 */
+	animation-duration: 0.7s;
+	animation-timing-function: cubic-bezier(.25,.25,.34,.92);
+}
+
+.candidate:last-child {
+	animation-play-state: paused; /* 룰렛 애니메이션 비활성화 */
+}
+
+@keyframes slideInDown { /* 스타트 애니메이션 */
+	from {
+		opacity: 0;
+		transform: translateY(-165px);
+	} 30% {
+		opacity: 1;
+	} to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideOutUp { /* 엔드 애니메이션 */
+	from {
+		transform: translateY(0);
+	} 30% {
+		opacity: 1;
+	} to {
+		opacity: 0;
+		transform: translateY(-165px);
+	}
+}
+
+#alertbox {
+	height: auto;
+}
+
+#video-area {
+	height: 90vh;
+	width: 160vh;
+	left: auto; /* 영상 오른쪽 정렬 */
+	right: 0; /* 영상 오른쪽 정렬 */
+	max-width: 100%;
+}
+
+#media-label {
+	text-shadow:none;
+}
+
+#media-label {
+	animation-name: slideInDown;
+	transition-delay: 0.2s;
+	animation-duration: 0.9s;
+	text-shadow:none;
+}
+
+#body.layout-above #media-label { /* 영상 후원 하단 메시지 */
+	top: 90vh;
+	height:7vh;
+	width: 158vh;
+	font-size: 5vh;
+	left: auto;
+	right: 0;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	background: rgba(192, 192, 192, 1);
+	color: rgb(0, 0, 0);
+}
+
+#media-label-loading {
+	display: none;
+}
+
+#Connecting,
+#pausing {
+	animation-name: slideInDown;
+	animation-delay: -0.2s;
+	animation-duration: 1s;
+}
+
+#image-wrap { /* 후원 이미지 표시 */
+	animation-name: slideInDown;
+	transition-delay: 0.4s;
+	animation-duration: 1.1s;
+	position:fixed;
+	height: 110px; /* 첫줄 크기에 맞게 조절 바람 */
+	width: 110px; /* 첫줄 크기에 맞게 조절 바람 */
+	left: auto;
+	right: 5vw;
+}
+
+#alert-image {
+}
+
+#body.layout-above #text-wrap {
+	background: rgba(192, 192, 192, 1);	/* 배경 색상 */
+}
+
+#alert-text {
+	padding: 0;
+}
+
+div {
+	text-align: left; /* 룰렛 왼쪽 정렬 */
+	text-shadow:none;
+}
+
+h1 {
+	animation-name: slideInDown;
+	transition-delay: 0.4s;
+	animation-duration: 1.1s;
+	text-align: left; /* 알림 텍스트 왼쪽 정렬 */
+	text-shadow:none;
+	margin-left: 5vw;
+	padding-right:12.5vw;
+}
+
+h2 {
+	animation-name: slideInDown;
+	transition-delay: 0.2s;
+	animation-duration: 0.9s;
+	text-align: left; /* 후원 텍스트 왼쪽 정렬 */
+	text-shadow: none;
+	margin-left: 5vw;
+	padding-right:12.5vw;
+}
+
+slotmachine {
+}
+
+#body.layout-above h1 {
+	padding-top: 0.5%;	/* 알림 텍스트 상단 여백 */
+}
+
+#body.layout-above h2 {
+	padding-bottom: 0.5%;	/* 후원 텍스트 하단 여백 */
+}
+
+#body.layout-above h1.hide,
+#body.layout-above h1.hide + h2 {
+	padding: 0;
+}
