@@ -31,8 +31,15 @@ height: auto !important;
 cursor: default;
 background-attachment: fixed;
 }
-body {
+html.darkmode {
+    background: #000;
+}
+body, html.darkmode body {
 background: transparent;
+}
+html.darkmode #main-menu > div[align="center"] {
+    background: transparent !important;
+    border: none !important;
 }
 div, button, img, a {
 transition-duration: 0.3s;
@@ -64,6 +71,10 @@ border-bottom-right-radius: 10px !important;
 }
 span {
 transition-duration: 0.3s;
+}
+html.darkmode #article-content p,
+html.darkmode #article-content span {
+    background-color: transparent !important;
 }
 .alertify-logs > div {
 border-radius: 30px;
@@ -133,6 +144,9 @@ min-height: 118px !important;
     letter-spacing:-0.5px;
     content:"내용을 작성해주세요.\A완성형 폰트의 문제로 인해 일부 글자가 보이지 않을 수 있습니다.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며 \A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다."
 }
+html.darkmode .fr-placeholder:before{
+    content:"내용을 작성해주세요.\A완성형 폰트의 문제로 인해 일부 글자가 보이지 않을 수 있습니다.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며\A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다.\A다크모드의 문제로 인해 본문과 배경의 색상이 고정됩니다. 다만 라이트모드에서는 정상적으로 표시됩니다."
+}
 div.modal-content,
 .form-control,
 .form-control:focus {
@@ -181,6 +195,9 @@ border-radius: 15px;
 #article-option-area {
 position: sticky;
 float: right;
+}
+html.darkmode .frame {
+    background: #000 !important;
 }
 #board-info > h1 > a {
 color: #ff68ef;
@@ -425,22 +442,13 @@ transition-duration: 0.6s;
 border:0;
 }
 #article-list > .article-list-row.notice {
-background: linear-gradient(-45deg, #f3f3f3 50%, rgba(255, 104, 239, 0.5) 0%);
-background-size: 225% auto;
-background-position-x: 100%;
-background-repeat: no-repeat;
+background-image: linear-gradient(-45deg, #f3f3f3 50%, rgba(255, 104, 239, 0.5) 0%);
 }
 #article-list > .article-list-row.hot {
-background: linear-gradient(-45deg, #f3eef7 50%, rgba(255, 104, 239, 0.5) 0%);
-background-size: 225% auto;
-background-repeat: no-repeat;
-background-position-x: 100%;
+background-image: linear-gradient(-45deg, #f3eef7 50%, rgba(255, 104, 239, 0.5) 0%);
 }
 #article-list > .article-list-row.active {
-background: linear-gradient(-45deg, #FFF9E5 50%, rgba(255, 104, 239, 0.5) 0%);
-background-size: 225% auto;
-background-repeat: no-repeat;
-background-position-x: 100%;
+background-image: linear-gradient(-45deg, #FFF9E5 50%, rgba(255, 104, 239, 0.5) 0%);
 }
 #article-list > .article-list-row:hover {
 background: linear-gradient(-45deg, #0000 50%, rgba(255, 104, 239, 0.5) 0%);
@@ -449,22 +457,49 @@ background-repeat: no-repeat;
 background-position-x: 0;
 }
 #article-list > .article-list-row.notice:hover {
-background: linear-gradient(-45deg, #f3f3f3 50%, rgba(255, 104, 239, 0.5) 0%);
-background-size: 225% auto;
-background-repeat: no-repeat;
-background-position-x: 0;
+background-image: linear-gradient(-45deg, #f3f3f3 50%, rgba(255, 104, 239, 0.5) 0%);
 }
 #article-list > .article-list-row.hot:hover {
-background: linear-gradient(-45deg, #f3eef7 50%, rgba(255, 104, 239, 0.5) 0%);
-background-size: 225% auto;
-background-repeat: no-repeat;
-background-position-x: 0;
+background-image: linear-gradient(-45deg, #f3eef7 50%, rgba(255, 104, 239, 0.5) 0%);
 }
 #article-list > .article-list-row.active:hover {
-background: linear-gradient(-45deg, #FFF9E5 50%, rgba(255, 104, 239, 0.5) 0%);
-background-size: 225% auto;
-background-repeat: no-repeat;
-background-position-x: 0;
+background-image: linear-gradient(-45deg, #FFF9E5 50%, rgba(255, 104, 239, 0.5) 0%);
+}
+html.darkmode #article-list > .article-list-row {
+background: linear-gradient(-45deg, #0000 50%, #9567FD88 0%);
+    background-color: #0000 !important;
+background-size: 225% auto !important;
+background-position-x: 100% !important;
+background-repeat: no-repeat !important;
+transition-duration: 0.6s;
+border:0;
+}
+html.darkmode #article-list > .article-list-row.notice {
+background-image: linear-gradient(-45deg, #333 50%, #9567FD88 0%) !important;
+background-size: 225% auto !important;
+background-position-x: 100% !important;
+background-repeat: no-repeat !important;
+}
+html.darkmode #article-list > .article-list-row.hot {
+background-image: linear-gradient(-45deg, #2f2544 50%, #9567FD88 0%);
+}
+html.darkmode #article-list > .article-list-row.active {
+background-image: linear-gradient(-45deg, #535555 50%, #9567FD88 0%);
+}
+html.darkmode #article-list > .article-list-row:hover {
+background: linear-gradient(-45deg, #0000 50%, #9567FD88 0%) !important;
+background-size: 225% auto !important;
+background-repeat: no-repeat !important;
+background-position-x: 0 !important;
+}
+html.darkmode #article-list > .article-list-row.notice:hover {
+background-image: linear-gradient(-45deg, #333 50%, #9567FD88 0%) !important;
+}
+html.darkmode #article-list > .article-list-row.hot:hover {
+background-image: linear-gradient(-45deg, #2f2544 50%, #9567FD88 0%) !important;
+}
+html.darkmode #article-list > .article-list-row.active:hover {
+background-image: linear-gradient(-45deg, #535555 50%, #9567FD88 0%) !important;
 }
 #article-list > .article-list-row > .item > .list-title > a:visited {
 color: #b0b0b0 !important;
@@ -479,7 +514,7 @@ color: #ff68ef;
 visibility:visible;
 }
 #article-list > .article-list-row > .item > .list-checkbox, #article-list > .article-list-row > .item > .list-header, #article-list > .article-list-row > .item > .list-category, #article-list > .article-list-row > .item > .list-title, #article-list > .article-list-row > .item > .list-blocked, #article-list > .article-list-row > .item > .list-time, #article-list > .article-list-row > .item > .list-title > .list-category, #article-list > .article-list-row > .item > .list-title > .list-writer {
-border: 0;
+border: 0 !important;
 }
 .dropdown.open .dropdown-menu,
 #writerContextMenu,
@@ -555,6 +590,9 @@ top: 0px;
 background: #fffa;
 z-index: 100;
 }
+html.darkmode #article-info, #board-info {
+background: #0000;
+}
 #article-info > h2 {
 font-weight: bold;
 white-space: normal;
@@ -596,6 +634,15 @@ color:#000;
 #main .menu-wrapper {
 border: 0;
 letter-spacing: -0.05em !important;
+background: white;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+html.darkmode #main .menu-wrapper {
+background: black;
+    border-bottom: 1px solid #535555;
 }
 #main .menu-wrapper div.header {
 text-align: center;
@@ -606,6 +653,7 @@ padding: 0.5em 1.4em 0.5em 0.7em !important;
 #main .menu-wrapper a {
 text-align: center;
 padding: 0.5em 1.4em 0.5em 0.7em !important;
+background: transparent !important;
 word-break: keep-all;
 position: relative;
 z-index: 2;
@@ -617,10 +665,8 @@ display: none;
 }
 #main .menu-wrapper a:hover {
 text-align: center;
-padding: 0em 0em 0em 0em !important;
-font-size: 19pt;
 word-break: keep-all;
-background: white !important;
+background: transparent !important;
 }
 #main .menu-wrapper a:after {
 content: "";
@@ -824,6 +870,9 @@ background-repeat: no-repeat;
   background: #6441a5;
   color: #fff;
   font-weight: bold;
+}
+html.darkmode #main .menu-wrapper .spacer:nth-of-type(2) {
+    background: #9567fd;
 }
 #main .menu-wrapper .spacer:nth-of-type(2):before {
     content: "\f005";
