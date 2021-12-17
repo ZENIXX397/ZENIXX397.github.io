@@ -32,6 +32,9 @@ height: auto !important;
 cursor:default;
 transition:0.3s ease;
 }
+html.darkmode, html.darkmode body {
+    background: #000;
+}
 body {
 background: transparent;
 transition:0.3s ease;
@@ -117,7 +120,7 @@ border-bottom-right-radius:10px !important;
 border-radius:10px !important;
 }
 div.fr-element.fr-view {
-min-height: 68px !important;
+min-height: 118px !important;
 }
 .fr-placeholder {
     font-size: 0 !important;
@@ -135,6 +138,9 @@ min-height: 68px !important;
     font-size:14px;
     letter-spacing:-0.5px;
     content:"내용을 작성해주세요.\A완성형 폰트의 문제로 인해 일부 글자가 보이지 않을 수 있습니다.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며 \A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다."
+}
+html.darkmode .fr-placeholder:before{
+    content:"내용을 작성해주세요.\A완성형 폰트의 문제로 인해 일부 글자가 보이지 않을 수 있습니다.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며\A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다.\A다크모드의 문제로 인해 본문과 배경의 색상이 고정됩니다. 다만 라이트모드에서는 정상적으로 표시됩니다."
 }
 .btn.btn-sm.btn-outline-danger:hover,
 .btn.btn-sm.btn-outline-danger:focus,
@@ -183,9 +189,6 @@ padding-bottom:2em;
 #article-list #article-list-menu>.btn.cog {
 border-radius: 15px;
 }
-#board-info {
-background: #fff !important;
-}
 #nav-overlay {
     background: rgba(0,0,0,0.8);
     opacity: 1;
@@ -201,6 +204,7 @@ background: #fff !important;
 nav#nav {
     width: 300px;
     transition-duration: 0.3s;
+    box-shadow: none;
 }
 nav#nav.hide {
     display: block !important;
@@ -346,6 +350,35 @@ border-bottom: 4px solid #ff68ef;
 #header-search-input .fa-search {
 color:#7129da !important;
 transition:0.3s ease;
+}
+html.darkmode .frame,
+html.darkmode.mb #board-info,
+html.darkmode.mb #article-info,
+html.darkmode.mb #header-top-notice,
+html.darkmode #article-content-wrapper > .header,
+html.darkmode.mb #article-content-wrapper #article-content,
+html.darkmode #article-content p,
+html.darkmode #article-content span,
+html.darkmode.mb #article-content-wrapper > .vote-area,
+html.darkmode #article-content-wrapper > .footer,
+html.darkmode.mb #article-reply-area,
+html.darkmode.mb #article-neighbor-list,
+html.darkmode .fr-box.fr-basic .fr-wrapper,
+html.darkmode.mb body #main-content .frame > div[style="background:#f3f2f0;"],
+html.darkmode #article-list #article-list-category,
+html.darkmode.mb #article-list > .article-list-row,
+html.darkmode.mb .pagination-area,
+html.darkmode.mb footer {
+    background: transparent !important;
+}
+html.darkmode #article-list #article-list-menu > .btn.write {
+    border-width: 1px;
+}
+html.darkmode #article-content-wrapper {
+    background: transparent;
+}
+html.darkmode.mb header {
+    background: #000;
 }
 .fa-search {
 transition:0.3s ease;
@@ -535,6 +568,9 @@ span>a:hover,
 span>a:focus,
 span>a:active {
 color: #7129da;
+}
+#boardSearchForm {
+    background: transparent;
 }
 .btn.square {
 border-radius:30px;
