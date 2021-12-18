@@ -51,6 +51,50 @@ color: #ff68ef;
 a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
 outline: none;
 }
+html.darkmode img[alt="Broadcaster"] {
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921382625355120680/BroadcastOrig.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Broadcaster"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921379831625687061/Broadcast.svg);
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Moderator"] {
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712046687539260/ModeratorOrig.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Moderator"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712036524740618/Moderator.svg);
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Global Moderator"] {
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712108616433674/GlobalModOrig.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Global Moderator"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712096260005918/GlobalMod.svg);
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Staff"] {
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712169077334076/StaffOrig.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Staff"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712160177008670/Staff.svg);
+    transition-duration: 0.3s;
+}
 .col-xs-2>div:last-child {
   background: transparent !important;
   padding: 0 !important;
