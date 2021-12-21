@@ -430,8 +430,15 @@ height: 18px;
 width: 120px;
 }
 #article-list #article-list-category {
+position: sticky;
+top:0;
 border-top: 2px solid #ff68ef;
 background: #fff8;
+}
+@media (min-width: 1400px) {
+ #article-list #article-list-category {
+  position:fixed;
+ }
 }
 #article-list #article-list-category > a {
 background: #fff8;
