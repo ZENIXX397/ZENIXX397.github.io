@@ -439,6 +439,9 @@ background: #fff8;
  #article-list #article-list-category {
   position:fixed;
  }
+ #article-list #article-list-category > a::before, #article-list #article-list-category > a::after {
+     z-index: 2;
+ }
 }
 #article-list #article-list-category > a {
 background: #fff8;
