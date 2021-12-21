@@ -432,9 +432,6 @@ width: 120px;
 #article-list #article-list-category {
 border-top: 2px solid #ff68ef;
 background: #fff8;
-position: sticky;
-top: 0px;
-z-index: 18;
 }
 #article-list #article-list-category > a {
 background: #fff8;
