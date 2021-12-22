@@ -459,9 +459,15 @@ background: #ff68ef;
      display: inline-block;
      border: 0;
  }
+ html.darkmode #article-list #article-list-category.can-float > a {
+   background: #242424;
+ }
     #article-list #article-list-category.can-float > a.active {
         background: #fff;
         color: #ff68ef;
+    }
+    #article-list #article-list-category.can-float > a.active:hover {
+background: rgba(192, 192, 192, 0.5);
     }
     #article-list #article-list-category.can-float > a:hover {
 background: rgba(192, 192, 192, 0.5);
