@@ -436,7 +436,7 @@ border-top: 2px solid #ff68ef;
 background: #fff8;
 }
 @media (min-width: 1400px) {
- #article-list #article-list-category {
+ #article-list #article-list-category.can-float {
   position:fixed;
  }
  #article-list #article-list-category > a::before, #article-list #article-list-category > a::after {
