@@ -31,6 +31,10 @@ height: auto !important;
 cursor: default;
 background-attachment: fixed;
 }
+#board-home-link-btn > .fa-home:before {
+  content: "9*2=12";
+  font-family: 'MaplestoryOTFLight';
+}
 html.darkmode {
     background: #000;
 }
