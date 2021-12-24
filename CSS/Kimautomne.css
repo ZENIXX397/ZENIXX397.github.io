@@ -913,9 +913,13 @@ color:#f6f6f6;
 box-shadow: none;
 }
 #movetotop {
-width: 48px;
+width: 150px;
 border-radius: 50px;
 transition-duration: 0s;
+}
+#movetotop > img {
+    content: url(https://cdn.discordapp.com/attachments/921043798237278238/923894017744306196/9212.svg);
+    filter: invert(100%);
 }
 .input-group-btn > .btn {
 border-color: #333;
