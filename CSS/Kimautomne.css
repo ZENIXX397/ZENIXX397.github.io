@@ -913,6 +913,11 @@ color:#f6f6f6;
 box-shadow: none;
 }
 #movetotop {
+width: 360px;
+border-radius: 50px;
+transition-duration: 0s;
+}
+html.darkmode #movetotop {
 width: 150px;
 border-radius: 50px;
 transition-duration: 0s;
