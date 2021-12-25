@@ -918,6 +918,10 @@ border-radius: 50px;
 transition-duration: 0s;
 }
 #movetotop > img {
+    content: url(https://cdn.discordapp.com/attachments/921043798237278238/924272792747253780/9212-.svg);
+    filter: invert(100%);
+}
+html.darkmode #movetotop > img {
     content: url(https://cdn.discordapp.com/attachments/921043798237278238/923894017744306196/9212.svg);
     filter: invert(100%);
 }
