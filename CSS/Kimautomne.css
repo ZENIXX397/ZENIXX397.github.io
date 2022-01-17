@@ -267,7 +267,7 @@ color: #7129da;
 border-radius: 30px;
 }
 #board-info #viewers-area .fa-user:before {
-content: url(https://cdn.discordapp.com/attachments/780447643708293122/781400554970677268/Gonik.gif);
+content: "\f2bd";
 }
 #board-info #viewers-area #viewers:before {
 content: "";
