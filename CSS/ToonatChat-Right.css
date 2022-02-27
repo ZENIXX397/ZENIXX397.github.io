@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'DIN';
+    font-style: normal;
+    src: url('https://ZENIXX397.github.io/Fonts/DIN.woff2') format('woff2');
+    src: url('https://ZENIXX397.github.io/Fonts/DIN.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+    font-family: 'a고딕';
+    font-style: normal;
+    src: url('https://ZENIXX397.github.io/Fonts/a신고딕.woff2') format('woff2');
+    src: url('https://ZENIXX397.github.io/Fonts/a신고딕.woff') format('woff');
+}
+@keyframes fadeInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+  } to {
+    transform: none;
+  }
+}
+@keyframes fadeOutRight {
+  from {
+    transform: none;
+  } to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+#widget_wrapper {
+  padding: 0;
+}
+.widget-style-simple {
+  margin: 0 !important;
+  border:none !important;
+}
+.progress-wrapper {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+.progress-bar {
+  opacity: 0.5;
+}
+.progress-bar:after {
+  display: none;
+}
+* {
+  font-family: 'DIN', 'a고딕' !important;
+  text-shadow: none !important;
+  animation-duration: .5s !important;
+  transition-duration: .5s !important;
+  animation-timing-function: cubic-bezier(.25,1,1,1) !important;
+  transition-timing-function: cubic-bezier(.25,1,1,1) !important;
+}
+body {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+}
+#div_content {
+  padding: 0 !important;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  word-wrap: anywhere;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+}
+#div_content>div {
+  width: auto;
+  padding: 10px;
+  margin: 0;
+}
+#div_content>div:nth-last-child(odd) {
+  background: linear-gradient(to right, #ff063e00, #ff063ecc);
+}
+#div_content>div:nth-last-child(even) {
+  background: linear-gradient(to right, #8306ff00, #8306ffcc);
+}
+.height-100 {
+  height: auto;
+}
+.chattype-icon {
+  width: 36px !important;
+  height: 36px !important;
+  margin-left: auto;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.badge-container * {
+  width: 36px !important;
+  height: 36px !important;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.float-left {
+  height: auto !important;
+  float: left;
+  flex-grow: 0;
+  order: 100;
+  padding: 0 !important;
+  vertical-align: top;
+}
+.text-right {
+  float: left !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+.clearfix {
+  font-size: 36px !important;
+  position: relative;
+  display: flex;
+  align-content: center;
+  margin-bottom: 0 !important;
+  align-content: center;
+  text-align: right;
+  right: 0;
+  width: auto;
+  flex-grow: 0;
+}
+.clearfix * {
+  font-size: 36px !important;
+  align-content: center;
+  margin-bottom: 0 !important;
+  position: relative;
+}
+span {
+  font-size: 24px;
+  display: block;
+  color: #fff;
+  vertical-align: top;
+  text-align: right;
+  word-wrap: anywhere !important;
+  width: auto !important;
+  min-height: auto !important;
+}
+img {
+    max-width: 36px;
+    max-height: 36px;
+}

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'DIN';
+    font-style: normal;
+    src: url('https://ZENIXX397.github.io/Fonts/DIN.woff2') format('woff2');
+    src: url('https://ZENIXX397.github.io/Fonts/DIN.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+    font-family: 'a고딕';
+    font-style: normal;
+    src: url('https://ZENIXX397.github.io/Fonts/a신고딕.woff2') format('woff2');
+    src: url('https://ZENIXX397.github.io/Fonts/a신고딕.woff') format('woff');
+}
+@keyframes fadeInRight {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  } to {
+    transform: none;
+  }
+}
+@keyframes fadeOutRight {
+  from {
+    transform: none;
+  } to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+* {
+  box-sizing: border-box;
+  text-shadow: none !important;
+  font-family: 'DIN', 'a고딕' !important;
+  transition-duration: .5s !important;
+  animation-timing-function: cubic-bezier(.25,1,1,1) !important;
+  transition-timing-function: cubic-bezier(.25,1,1,1) !important;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'NanumSquareRoundEB', sans-serif;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#log {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  word-wrap: anywhere;
+}
+.reverse #log {
+  align-items: flex-end;
+}
+#log > div {
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  animation:  fadeInRight .5s, fadeOutRight .5s 20s forwards;
+}
+#log > div:nth-last-child(odd) {
+  background: linear-gradient(to left, #ff063e00, #ff063ecc);
+}
+#log > div:nth-last-child(even) {
+  background: linear-gradient(to left, #8306ff00, #8306ffcc);
+}
+/* .badge.broadcaster-icon,.badge.moderator-icon {
+  display: none;
+} */
+/* #log > div.broadcaster  {
+  background: linear-gradient(270deg, rgba(233, 25, 22, 0.5) 10px, rgba(0, 0, 0, 0.5) 0%);
+} */
+/* #log > div.moderator {
+  background: linear-gradient(270deg, rgba(0, 173, 3, 0.5) 10px, rgba(0, 0, 0, 0.5) 0%);
+} */
+#log > div.broadcaster span, #log > div.moderator span {
+}
+.meta {
+  display: flex;
+  align-content: center;
+}
+.name {
+  font-size: 36px;
+  order: 100;
+}
+.colon {
+  display: none;
+}
+.badge {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.message {
+  font-size: 24px;
+  display: block;
+  color: #fff;
+  vertical-align: top;
+}

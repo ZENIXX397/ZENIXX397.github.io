@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'a견고딕';
+    font-style: normal;
+    src: url('https://O2GenX.github.io/a견고딕.woff') format('woff');
+}
+@font-face {
+    font-family: 'Hurme';
+    font-style: normal;
+    src: url('https://O2GenX.github.io/Hurme Geometric Sans 3 W03 Bold.woff') format('woff');
+}
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  color: rgba(0, 0, 0, 0.75) !important;
+  font-weight: 300 !important;
+  font-size: 24px !important; /* 폰트 사이즈 */
+  font-family: 'Hurme', 'a견고딕' !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#goal-progress {
+  background: rgba(127, 127, 127, 0.25) !important; /* 배경 컬러 */
+}
+#goal-progress-bar {
+  background: rgba(142, 0, 242); /* 진행상태 컬러 */
+  opacity: 0.5;
+}
