@@ -2,8 +2,8 @@
 /* Font Face */
 @font-face {
     font-family: 'a고딕';
-    src: url('https://ZENIXX397.github.io/Fonts/a고딕12.woff2') format('woff2'),
-    url('https://ZENIXX397.github.io/Fonts/a고딕12.woff') format('woff');
+    src: url('https://ZENIXX397.github.io/Fonts/a신고딕.woff2') format('woff2'),
+    url('https://ZENIXX397.github.io/Fonts/a신고딕.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -50,14 +50,16 @@
 @keyframes FadeIn {
     from {
         opacity: 0;
-    } to {
+    }
+    to {
         opacity: 1;
     }
 }
 @keyframes SlideIn {
     from {
         background-position-x: 100%;
-    } to {
+    }
+    to {
         background-position-x: 0;
     }
 }
@@ -82,11 +84,11 @@
 /* Light-EC */
 * {
     font-family: 'Roboto', 'a고딕', sans-serif;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
     box-shadow: none !important;
 }
 html {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/890182254360395796/NT_PV_3.png');
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/947410139382685757/a7c017942b758d1f4b65.png');
     /* background: #fff; */
     height: auto !important;
     cursor: default;
@@ -139,9 +141,9 @@ header #header-bar {
 }
 header #header-bar #header-top-notice,
 header #header-bar a.dropdown-toggle,
-header #header-bar #header-top-notice a{
-color:#fff;
-animation: FadeIn 0.6s;
+header #header-bar #header-top-notice a {
+    color: #fff;
+    animation: FadeIn 0.6s;
 }
 header #header-bar #header-top-notice strong.notice-badge {
     display: none;
@@ -176,16 +178,48 @@ img[src="https://upload.tgd.kr/icon/nologin.png"] {
     content: url(https://cdn.discordapp.com/attachments/780447643708293122/914405839262064670/89423246_p29.png);
 }
 img[alt="Broadcaster"] {
-  content: url(https://cdn.discordapp.com/attachments/780447643708293122/914377960927154196/Orange.png);
-  vertical-align: middle !important;
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921379831625687061/Broadcast.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+img[alt="Broadcaster"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921382625355120680/BroadcastOrig.svg);
+    transition-duration: 0.3s;
 }
 img[alt="Moderator"] {
-  content: url(https://cdn.discordapp.com/attachments/780447643708293122/914377961128464454/Blue.png);
-  vertical-align: middle !important;
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712036524740618/Moderator.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+img[alt="Moderator"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712046687539260/ModeratorOrig.svg);
+    transition-duration: 0.3s;
 }
 img[alt="Global Moderator"] {
-  content: url(https://cdn.discordapp.com/attachments/780447643708293122/914377961451446332/Gray.png);
-  vertical-align: middle !important;
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712096260005918/GlobalMod.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+img[alt="Global Moderator"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712108616433674/GlobalModOrig.svg);
+    transition-duration: 0.3s;
+}
+img[alt="Staff"] {
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712160177008670/Staff.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+img[alt="Staff"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712169077334076/StaffOrig.svg);
+    transition-duration: 0.3s;
 }
 
 /* Button */
@@ -285,7 +319,7 @@ img[alt="Global Moderator"] {
     line-height: 24px;
     color: var(--downvote);
 }
-.alert button.close>span {
+.alert button.close > span {
     color: #000;
 }
 .btn,
@@ -372,7 +406,7 @@ button.close > span {
 }
 .btn.square.btn-default.best > i.fa.fa-star {
     color: #efc839;
-    font-size: 12px;
+    font-size: 13px;
     vertical-align: middle;
 }
 .btn.square.btn-default.best > i.fa.fa-star:before {
@@ -381,9 +415,9 @@ button.close > span {
 .btn.square.btn-default.best > i.fa.fa-star:after {
     content: " 개념글";
     color: #efc839;
-    font-size: 13.5px;
-    vertical-align: middle;
+    font-size: 12px;
     transition-duration: 0.3s;
+    font-family: 'Roboto', 'a고딕', sans-serif;
 }
 .btn.square.btn-default.best:hover i.fa.fa-star:before,
 .btn.square.btn-default.best:focus i.fa.fa-star:before,
@@ -423,7 +457,6 @@ button.close > span {
 /* .btn.active,
 .btn:active {
 } */
-
 /* FontAwesome */
 small.favo > .fa-heart {
     color: #f75563;
@@ -438,7 +471,7 @@ span.a-badge i.fa.fa-commenting {
     transform: scaleX(-1);
 }
 .fa-pencil:before {
-    content: "\f044";    
+    content: "\f044";
 }
 .fa-commenting:before {
     content: "\f075";
@@ -455,22 +488,27 @@ span.a-badge i.fa.fa-commenting {
 #article-list #article-option-area-toggle-btn .fa-eye-slash:before {
     content: "\f129";
 }
-.vote-btn[data-type="up"] > .fa-thumbs-up:before, #article-votes > i.fa.fa-heart:before, .like > .fa-thumbs-up:before {
+.vote-btn[data-type="up"] > .fa-thumbs-up:before,
+#article-votes > i.fa.fa-heart:before,
+.like > .fa-thumbs-up:before {
     content: "\f005";
 }
 #article-content-wrapper .fa-bell-slash-o:before {
-    content: "\f024";    
+    content: "\f024";
 }
 #article-content-wrapper .fa-plus:before {
-    content: "\f02e";    
+    content: "\f02e";
 }
 
 /* Header */
-header .row > div:nth-child(1) > a{
-    height: 50px;
+header .row > div:nth-child(1) > a {
+    display: block;
+    width: 200px;
     margin-bottom: -4px;
-    content: url('https://cdn.discordapp.com/attachments/780447643708293122/897457988942585916/TGD.NT.svg');
     transition-duration: 0.3s;
+} 
+header .row > div:nth-child(1) > a img {
+    content: url('https://cdn.discordapp.com/attachments/780447643708293122/897457988942585916/TGD.NT.svg');
 }
 /* header .row > div:nth-child(1) > a:hover {
     background: url('https://cdn.discordapp.com/attachments/780447643708293122/890955398448828416/TGD.KR-Orange.svg') no-repeat;
@@ -507,7 +545,7 @@ header #header-bar > .row {
     border-top: 4px solid var(--nt-orange-2);
     border-left: none;
     border-right: none;
-    border-bottom: 1px dotted #ccc;
+    border-bottom: 2px dotted #ccc;
 }
 header #header-bar #header-menu-right #userDropdown #notification-badge {
     background: var(--nt-orange-2);
@@ -528,8 +566,12 @@ html.darkmode #esports-container > a.poweredby {
 }
 .modal-content {
     background: var(--black-clear-def);
+    border: 0;
 }
-:is(tbody, tfoot, thead) td, th {
+.table-bordered :is(tbody,
+tfoot,
+thead) td,
+th {
     border: 0 !important;
     vertical-align: middle !important;
 }
@@ -541,9 +583,8 @@ html.darkmode #esports-container > a.poweredby {
 }
 .form-control {
     border: 1px solid;
-    border-image: linear-gradient(to bottom, #fff6 5px, #0000 25px);
+    border-image: linear-gradient(to top, #fff6 5px, #0000 25px);
     border-image-slice: 1;
-    border-bottom: 2px solid var(--nt-orange-2);
     background: #0000;
     color: #fff;
 }
@@ -565,9 +606,8 @@ html.darkmode #esports-container > a.poweredby {
 }
 .panel-body li {
     border: 1px solid;
-    border-image: linear-gradient(to bottom, #fff6 5px, #0000 25px);
+    border-image: linear-gradient(to top, #fff6 5px, #0000 25px);
     border-image-slice: 1;
-    border-bottom: 2px solid var(--nt-orange-2);
     border-radius: 0 !important;
     background: #0000;
 }
@@ -588,29 +628,80 @@ option {
 .alertify .dialog > * {
     background: var(--black-clear-def);
 }
+#notify-header h4 {
+    font-size: 36px;
+    padding: 5px 0 0 10px;
+}
+#notify-header #readall-area {
+    padding: 10px 10px 0 0;
+}
+#notify-header hr {
+    margin: 10px 0 0 10px;
+    visibility: hidden;
+}
 .notify-item.Y {
-    background: #0000;
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373728040976394/READED.svg);
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
 }
 .notify-item.N {
-    background: #0000;
-}
-.notify-item {
-    border-bottom: 0;
-}
-.notify-item:hover {
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373727806087198/UNREAD.svg);
+    background-color: #fff3;
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
     transition-duration: 0.3s;
-    background: linear-gradient(-90deg, #444 55px, #0000 100%);
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
+}
+.notify-item,
+.notify-item:last-child {
+    border: 0;
+}
+.notify-item.Y:hover {
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373728040976394/READED.svg);
     border-style: solid;
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
     border-image-slice: 1;
     border-width: 0 7px 0 0;
-    animation: Bright 1.5s linear infinite;
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%, 0%;
+    transition-duration: 0.3s;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
+}
+.notify-item.N:hover {
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373727806087198/UNREAD.svg);
+    background-color: #fff3;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
+    border-image-slice: 1;
+    border-width: 0 7px 0 0;
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%, 0%;
+    transition-duration: 0.3s;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
+}
+.notify-item > .notify-content-area > a {
+    color: white;
+}
+.notify-item > .notify-content-area > a strong {
+    color:var(--nt-orange-2);
+}
+.notify-item > .notify-content-area > span.ago {
+    color: white;
 }
 .notify-item > .notify-action-area > a.delete-notify {
     color: var(--nt-orange-2);
 }
 .notify-item > .notify-action-area > a.delete-notify:hover {
     background: #fff3;
+    color: var(--nt-orange-2);
 }
 
 /* Row */
@@ -621,6 +712,7 @@ option {
     content: url('https://cdn.discordapp.com/attachments/780447643708293122/897457988942585916/TGD.NT.svg');
     width: 328px;
     height: auto;
+    margin-bottom: 54px;
 }
 .tgd-login > img:nth-of-type(2) {
     content: url(https://cdn.discordapp.com/attachments/780447643708293122/921023702718640178/LOGIN.svg);
@@ -633,10 +725,11 @@ option {
     padding: 0 0 5em !important;
 }
 #content-area > #main.container > .row,
-header>#header-bar.container>.row:first-child {
+header > #header-bar.container > .row:first-child {
     background: var(--black-clear-def);
 }
-#info-area div, #follow-area {
+#info-area div,
+#follow-area {
     color: #fff;
 }
 .row.mt-2 {
@@ -649,10 +742,11 @@ header>#header-bar.container>.row:first-child {
 #articleWriteForm .mt-2:nth-child(4) {
     margin: 0;
 }
-header>.container>.row:first-child {
+header > .container > .row:first-child {
     background: transparent;
 }
-:is(#header-menu-left, #header-menu-right) .fa,
+:is(#header-menu-left,
+#header-menu-right) .fa,
 .caret {
     color: var(--nt-orange-2)
 }
@@ -666,8 +760,8 @@ header>.container>.row:first-child {
     padding-left: 0;
     padding-right: 15px;
 }
-.col-xs-2>div:last-child,
-#article-list>div[style="background:#efefef;padding:10px 8px;"],
+.col-xs-2 > div:last-child,
+#article-list > div[style="background:#efefef;padding:10px 8px;"],
 .frame div[style="display:flex;background:#efefef;"] {
     background: transparent !important;
     padding: 0 !important;
@@ -731,7 +825,7 @@ display: none !important;
 .fr-wrapper {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    min-height: 120px;
+    min-height: 150px;
     max-height: 1000px;
     height: auto !important;
     background: #0000 !important;
@@ -749,7 +843,7 @@ display: none !important;
     border-radius: 0 !important;
 }
 .fr-toolbar,
-.fr-toolbar .fr-command.fr-btn>.fa,
+.fr-toolbar .fr-command.fr-btn > .fa,
 .fr-popup .fr-command.fr-btn > .fa {
     color: #fff;
 }
@@ -822,7 +916,8 @@ left: auto !important; */
     color: var(--nt-orange-2);
     transition: 0.3s;
 }
-.fr-popup .fr-action-buttons button.fr-command:hover, .fr-popup .fr-action-buttons button.fr-command:focus {
+.fr-popup .fr-action-buttons button.fr-command:hover,
+.fr-popup .fr-action-buttons button.fr-command:focus {
     color: var(--nt-orange-1);
     background: #0000;
     transition-duration: 0.3s !important;
@@ -831,12 +926,12 @@ left: auto !important; */
     background: #fff6;
 }
 div.fr-element.fr-view {
-    min-height: 118px !important;
+    min-height: 150px !important;
 }
 .fr-placeholder {
     font-size: 0 !important;
     line-height: 20px !important;
-    margin-top: -118px !important;
+    margin-top: -150px !important;
     padding: 16px 16px 26px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -844,11 +939,46 @@ div.fr-element.fr-view {
     position: relative !important;
     z-index: 1 !important;
 }
-.fr-placeholder:before{
+.fr-placeholder:before {
     white-space: pre-wrap;
-    font-size:14px;
-    letter-spacing:-0.5px;
-    content:"내용을 작성해주세요.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며 \A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다."
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    content: "내용을 작성해주세요.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며 \A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다."
+}
+#article-emoticon-dialog {
+    height: 391px;
+    width: 540px;
+    border: 0;
+    background: var(--black-clear-def);
+}
+#article-emoticon-dialog #article-emoticon-dialog-header {
+    background: transparent;
+}
+#article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes {
+    scroll-snap-type: x mandatory;
+    height: 75px;
+}
+#article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes > img {
+    scroll-snap-align: start;
+    height: 58px;
+    padding: 2px 1.4px;
+    border: 2px solid transparent;
+}
+#article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes > img.active {
+    border: 2px solid var(--nt-orange-2);
+}
+#article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes > img:hover,
+#article-emoticon-dialog #article-emoticon-dialog-header #articleemoticon-dialog-header--emotes > img.active {
+    background: #fffc;
+}
+#article-emoticon-dialog #article-emoticon-dialog-emote-list {
+    scroll-snap-type: y mandatory;
+    height: 316px;
+}
+#article-emoticon-dialog #article-emoticon-dialog-emote-list > img {
+    scroll-snap-align: start;
+    height: 104px;
+    width: 104px;
 }
 
 /* Article - Content */
@@ -871,11 +1001,6 @@ div.fr-element.fr-view {
 #article-content-wrapper > .footer {
     background: #0000;
     padding: 0 0.8em;
-}
-#article-content:active, #article-content:active span {
-    background: #fff;
-    color: #000;
-    transition-delay: 0.3s;
 }
 
 /* Article - Info */
@@ -906,25 +1031,27 @@ content: url(https://cdn.discordapp.com/attachments/780447643708293122/891610126
     font-weight: bold;
     white-space: normal;
 }
-span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
-    color:#fff !important;
+span.category[style="color:#000000"],
+.nav-link[style="color:#000000"] {
+    color: #fff !important;
 }
 #article-info #article-info-writer {
     font-size: 0px;
     padding-left: 60px;
 }
-#article-info>#article-info-writer>strong {
-    font-size:12px;
+#article-info > #article-info-writer > strong {
+    font-size: 12px;
     vertical-align: middle;
 }
-#article-info>#article-info-writer>small {
-    font-size:12px;
-    padding:0 .5em;
+#article-info > #article-info-writer > small {
+    font-size: 12px;
+    padding: 0 .5em;
     vertical-align: middle;
 }
 #article-info #article-info-writer:hover {
     filter: brightness(125%);
-}.profile-img {
+}
+.profile-img {
     border-radius: 15px;
 }
 #article-option-area {
@@ -955,10 +1082,10 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
 [aria-label][data-balloon-pos][data-balloon-pos="down"]::before {
     border-radius: 30px;
 }
-#board-info #score-area .fa-trophy::before {
+/* #board-info #score-area .fa-trophy::before {
     content: url('https://cdn.discordapp.com/attachments/780447643708293122/890176551440777276/BPMIcon.png');
     opacity: 75%;
-}
+} */
 #board-info #viewers-area,
 #board-info #score-area {
     color: var(--nt-orange-2);
@@ -980,6 +1107,7 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
 #board-info #viewers-area #viewers:after {
     color: var(--nt-orange-2);
     content: "명 접속중";
+    opacity: 0;
     transition-duration: 0.3s;
 }
 #board-info #viewers-area #viewers:hover:before,
@@ -1005,14 +1133,14 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
     position: relative;
 }
 #board-info #board-info-bottom a:nth-child(3),
-#board-info #board-info-bottom a:nth-child(n+5) {
-    display:none;
+#board-info #board-info-bottom a:nth-child(n + 5) {
+    display: none;
 }
 #board-info:before {
     display: block;
     position: absolute;
     content: "";
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/912960359021813811/Just1.png');
+    background: url('https://cdn.discordapp.com/attachments/921041068299010068/921042743030075442/Just1Per.svg');
     background-size: contain;
     border-radius: 25px;
     height: 49px;
@@ -1043,11 +1171,11 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
 #article-list #article-list-menu > .btn.cog {
     border-radius: 15px;
 }
-#article-list #article-option-area-toggle-btn {
-    margin-top: 2px !important;
-    height: 34px !important;
-    background: #0000 !important;
-    opacity: 1 !important;
+#article-list #article-option-area > #article-option-area-toggle-btn {
+    margin-top: 2px;
+    height: 34px;
+    background: #0000;
+    opacity: 1;
 }
 #article-list #article-option-area-toggle-btn:hover {
     background: #fff4 !important;
@@ -1056,25 +1184,72 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
     color: white;
 }
 #article-list > .article-list-row > .item > .list-title > .list-writer > span {
-  height: 18px;
-  max-width: 180px;
-  width: auto;
-  color: #ccc;
+    height: 18px;
+    max-width: 180px;
+    width: auto;
+    color: #ccc;
 }
 #article-list #article-list-category {
     border-top: 2px solid var(--nt-orange-2);
-    background: #0000;
+    border-bottom: 2px solid var(--nt-orange-2);
+    background: var(--black-clear-def);
     position: sticky;
+    height: 38px;
     top: 0;
     z-index: 18;
+}
+@media (min-width: 1400px) {
+    #article-list #article-list-category.can-float {
+        position:fixed;
+        background: var(--black-clear-def);
+        border-radius: 0;
+        transform: translate(650px, 72px);
+        border-color: var(--nt-orange-2);
+        height: auto;
+    }
+    #article-list #article-list-category.can-float > a {
+        background-color: transparent !important;
+        background-image: linear-gradient(-90deg, #666, #0000 50%, #0000 100%) !important;
+        background-size: 200% auto !important;
+        background-position-x: 0% !important;
+        background-repeat: no-repeat !important;
+        transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
+        border-width: 0 0 0 0;
+        color: #fff;
+        transition-property: background, color;
+    }
+    #article-list #article-list-category > a::before,
+    #article-list #article-list-category > a::after {
+        z-index: 2;
+    }
+    #article-list #article-option-area > #article-option-area-toggle-btn {
+        margin-top: 2px;
+    }
+    #article-list #article-list-category.can-float > a:hover {
+        background-color: transparent !important;
+        background-image: linear-gradient(-90deg, #666, #0000 50%, #0000 100%) !important;
+        background-size: 200% auto !important;
+        background-position-x: 100% !important;
+        background-repeat: no-repeat !important;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
+        border-image-slice: 1;
+        border-width: 0 7px 0 0;
+        transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
+        transition-property: border, color;
+    }
+    #article-list #article-list-category > a::after {
+        display: none !important;
+    }
 }
 #article-list #article-list-category > a {
     line-height: 1.1;
     background: #0000;
     position: relative;
+    height: 34px;
 }
 #article-list #article-list-category > a.active {
-    background: #fff6;
+    background: #fff6 !important;
 }
 #article-list #article-list-category > a::after {
     bottom: 0;
@@ -1095,11 +1270,14 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
     transform: scaleX(1);
 }
 #article-list #article-list-category > a.active:focus {
-    color: var(--nt-orange-2);
+    color: var(--nt-orange-2) !important;
 }
 #article-list #article-list-category > a.active:hover {
     background: #fff6;
-    color: var(--nt-orange-2);
+    color: var(--nt-orange-2) !important;
+}
+#article-list #article-list-category #board-home-link-btn {
+    color: white;
 }
 #article-list > .article-list-row > .item > .list-header {
     border: 0;
@@ -1117,7 +1295,7 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
     color: var(--nt-orange-2);
 }
 #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span > img {
-  vertical-align: bottom;
+    vertical-align: bottom;
 }
 /* .list-writer.logged > span:after, .reply-writer.logged:after {
   content: url(https://cdn.discordapp.com/attachments/780447643708293122/914368617196441610/Logged.png);
@@ -1136,7 +1314,7 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
     background-position-x: 100%, 0% !important;
     background-repeat: no-repeat !important;
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0,0,0.75,0) !important;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
 }
 #article-list > .article-list-row.notice {
     background: linear-gradient(-45deg, #fff2 52.5px, #fff4 0%), linear-gradient(-90deg, #222, #0000 50%, #0000 100%);
@@ -1153,12 +1331,12 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
     border-image-slice: 1;
     border-width: 0 7px 0 0;
-    animation: Bright 1.5s linear infinite;
     background-size: 100% auto, 200% auto !important;
     background-repeat: no-repeat !important;
     background-position-x: 100%, 100% !important;
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
 }
 #article-list > .article-list-row.notice:hover {
     background: linear-gradient(-45deg, #fff2 52.5px, #fff4 0%), linear-gradient(-90deg, #222, #0000 50%, #0000 100%);
@@ -1234,9 +1412,8 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
 }
 #writerContextMenu {
     border: 1px solid;
-    border-image: linear-gradient(to bottom, #fff6 10px, #0000 50px);
+    border-image: linear-gradient(to top, #fff6 10px, #0000 50px);
     border-image-slice: 1;
-    border-bottom: 2px solid var(--nt-orange-2);
     background: #000c;
 }
 .dropdown-menu .divider {
@@ -1262,43 +1439,9 @@ span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
 .dropdown-menu > li > a > span {
     line-height: 30px !important;
 }
-#favoriteDropdownMenu > li > a, #latestDropdownMenu > li > a  {
+#favoriteDropdownMenu > li > a,
+#latestDropdownMenu > li > a {
     padding: 0 0 0 6px;
-}
-.pagination > .active > a,
-.pagination > .active > a:focus {
-    background-color: var(--nt-orange-2);
-    border-color: var(--nt-orange-2);
-}
-.pagination > .active > a:hover {
-    background-color: #0000;
-    color: var(--nt-orange-2);
-    border-color: var(--nt-orange-2);
-}
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover {
-    border-color: var(--nt-orange-2);
-    color: var(--nt-orange-2);
-    background: #0000;
-}
-.pagination > li > a,
-.pagination > li > span {
-    background: var(--black-clear-def);
-    color: var(--nt-orange-2);
-}
-.pagination > li:first-child > a, .pagination > li:first-child > span {
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
-}
-.pagination > li.active:nth-child(2) > a, .pagination > li:first-child > span {
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
-}
-.pagination > li:last-child > a, .pagination > li:last-child > span {
-    border-top-right-radius: 17px;
-    border-bottom-right-radius: 17px;
 }
 
 /* Article - Reply */
@@ -1309,7 +1452,14 @@ div.list-writer.logged > span:hover {
 #comment-write-form #comment-write-button-area {
     padding: 0 0.8em;
 }
-#commentWriteInfoForm > .left, #commentWriteInfoForm > .right {
+#comment-write-form #comment-write-button-area .pull-left {
+    margin-right: 8px;
+}
+#comment-write-form #comment-write-button-area .pull-right {
+    margin-left: 8px;
+}
+#commentWriteInfoForm > .left,
+#commentWriteInfoForm > .right {
     padding: 0;
 }
 #comment-write-form-area {
@@ -1321,10 +1471,47 @@ div.list-writer.logged > span:hover {
 .reply-content #comment-write-form {
     margin: 1em -9.8px;
 }
+#comment-emoticon-dialog {
+    height: 391px;
+    width: 540px;
+    border: 0;
+    background: var(--black-clear-def);
+}
+#comment-emoticon-dialog #comment-emoticon-dialog-header {
+    background: transparent;
+}
+#comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes {
+    scroll-snap-type: x mandatory;
+    height: 75px;
+}
+#comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img {
+    scroll-snap-align: start;
+    height: 58px;
+    padding: 2px 1.4px;
+    border: 2px solid transparent;
+}
+#comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img.active {
+    border: 2px solid var(--nt-orange-2);
+}
+#comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img:hover, #comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img.active {
+    background: #fffc;
+}
+#comment-emoticon-dialog #comment-emoticon-dialog-emote-list {
+    scroll-snap-type: y mandatory;
+    height: 316px;
+}
+#comment-emoticon-dialog #comment-emoticon-dialog-emote-list > img {
+    scroll-snap-align: start;
+    height: 104px;
+    width: 104px;
+}
 #article-content-wrapper,
 #article-reply-area #reply-real-area,
 #article-reply-area #reply-best-area {
     padding: 0 !important;
+}
+#article-comment a {
+    color: #fff;
 }
 .reply-header {
     position: sticky !important;
@@ -1332,28 +1519,31 @@ div.list-writer.logged > span:hover {
     border: 0 !important;
 }
 #article-reply-area #reply-real-area .reply > .reply-header {
-    background: linear-gradient(-45deg, #0003 225px, #fff9 0%);
+    background: linear-gradient(-45deg, var(--black-clear-1) 225px, var(--black-clear-3) 0%);
 }
-
 #article-reply-area #reply-best-area .reply .reply-header,
 #article-reply-area #reply-best-area .reply:first-child:nth-last-child(1) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743432851161149/BEST.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743432851161149/BEST.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #ffb7b099 0%);
     background-size: cover;
 }
 #article-reply-area #reply-best-area .reply:nth-child(1) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743632055451678/BEST_1.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743632055451678/BEST_1.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #ffb7b099 0%);
     background-size: cover;
 }
 #article-reply-area #reply-best-area .reply:nth-child(2) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743759813963846/BEST_2.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743759813963846/BEST_2.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #bf898499 0%);
     background-size: cover;
 }
 #article-reply-area #reply-best-area .reply:nth-child(3) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743871751553044/BEST_3.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743871751553044/BEST_3.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #805b5899 0%);
     background-size: cover;
 }
 #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer,
 #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer {
+    color: #fff !important;
+}
+#article-reply-area #reply-real-area .reply.active > .reply-header > .reply-writer,
+#article-reply-area #reply-best-area .reply.active > .reply-header > .reply-writer {
     color: #000 !important;
 }
 .reply-writer > .label-danger {
@@ -1371,28 +1561,16 @@ div.list-writer.logged > span:hover {
 }
 #article-reply-area #reply-real-area .reply.active > .reply-header,
 #article-reply-area #reply-best-area .reply.active > .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/897791711298846750/SELECTED.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff9e599 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/897791711298846750/SELECTED.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff9ac99 0%);
     background-size: cover;
     animation: SlideIn 0.6s;
 }
-#article-reply-area #reply-real-area .reply:active {
-    background: #fff;
-    color: #000;
-    transition-delay: 0.3s;
-}
-#article-reply-area #reply-best-area .reply:active {
-    background: #fff4ea;
-    color: #000;
-    transition-delay: 0.3s;
-}
-#article-reply-area #reply-real-area .reply.active:active,
-#article-reply-area #reply-best-area .reply.active:active {
-    background: #fff9e5;
-    color: #000;
-    transition-delay: 0.3s;
-}
 #article-reply-area #reply-real-area .reply > .reply-header > small.code,
 #article-reply-area #reply-best-area .reply > .reply-header > small.code {
+    color: #ccc;
+}
+#article-reply-area #reply-real-area .reply.active > .reply-header > small.code,
+#article-reply-area #reply-best-area .reply.active > .reply-header > small.code {
     color: #333;
 }
 #article-reply-area #reply-real-area .reply,
@@ -1423,15 +1601,19 @@ div.list-writer.logged > span:hover {
 #totalCommentCount {
     color: var(--nt-orange-2);
 }
-#article-neighbor-list > div {
+#article-neighbor-list div {
     background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%);
     background-size: 200% auto;
     background-position-x: 0%;
     background-repeat: no-repeat;
-    transition-timing-function: cubic-bezier(0,0,0.75,0) !important;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
     transition-duration: 0.3s;
+    height: 34px;
+    padding: 0;
+    width: 100%;
+    display: table;
 }
-#article-neighbor-list > div:hover {
+#article-neighbor-list div:hover {
     background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%);
     background-size: 200% auto;
     background-position-x: 100%;
@@ -1440,17 +1622,13 @@ div.list-writer.logged > span:hover {
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%) !important;
     border-image-slice: 1 !important;
     border-width: 0 7px 0 0 !important;
-    animation: Bright 1.5s linear infinite;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
     transition-duration: 0.3s;
+    transition-property: border;
 }
 #article-neighbor-list > div:hover span.author {
-    border-style: solid !important;
-    border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%) !important;
-    border-image-slice: 1 !important;
-    border-width: 0 7px 0 0 !important;
-    animation: Bright 1.5s linear infinite;
     transition-duration: 0.3s;
+    transition-property: border;
 }
 #article-neighbor-list {
     padding: 0;
@@ -1465,10 +1643,16 @@ div.list-writer.logged > span:hover {
 #article-neighbor-list > div > span.author {
     padding-right: 1em;
     color: #fff;
+    width: 180px;
+    max-width: 180px;
     transition-duration: 0.3s;
 }
 
 /* Aside - Navigation */
+#main #main-menu {
+    position: sticky;
+    top: 0;
+}
 #main .menu-wrapper {
     border: 0;
     letter-spacing: -0.05em !important;
@@ -1489,13 +1673,14 @@ div.list-writer.logged > span:hover {
 #main .menu-wrapper > div.header .fa-bars {
     color: #000;
 }
-#main .menu-wrapper a, #main .menu-wrapper #fav-shortcut-area a {
+#main .menu-wrapper a,
+#main .menu-wrapper #fav-shortcut-area a {
     color: white;
     background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%);
     background-size: 200% auto;
     background-position-x: 0%;
     background-repeat: no-repeat;
-    transition-timing-function: cubic-bezier(0,0,0.75,0) !important;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
     text-align: left;
     padding: 0.5em 1.4em 0.5em 0.7em !important;
     word-break: keep-all;
@@ -1549,7 +1734,8 @@ div.list-writer.logged > span:hover {
 #main .menu-wrapper .spacer:nth-of-type(5):after {
     content: "‍ 공지 / 건의";
 }
-#main .menu-wrapper a:hover, #main .menu-wrapper #fav-shortcut-area a:hover {
+#main .menu-wrapper a:hover,
+#main .menu-wrapper #fav-shortcut-area a:hover {
     background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%);
     background-size: 200% auto;
     background-position-x: 100%;
@@ -1558,10 +1744,10 @@ div.list-writer.logged > span:hover {
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
     border-image-slice: 1;
     border-width: 0 7px 0 0;
-    animation: Bright 1.5s linear infinite;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
     text-align: left;
     word-break: keep-all;
+    transition-property: border;
 }
 /* #main .menu-wrapper > a:after {
 content: "";
@@ -1579,7 +1765,7 @@ background-repeat: no-repeat;
 } */
 #main .menu-wrapper > a:hover:after {
     /* background-position-x: 0; */
-    transition-duration: 0.36s;
+    transition-duration: 0.3s;
 }
 
 /* Article - Search */
@@ -1605,10 +1791,71 @@ background-repeat: no-repeat;
     height: 31.15px;
 }
 #article-list #boardSearchForm input:hover {
-    border: 1px solid var(--nt-orange-2) !important;
+    border: 1px solid var(--nt-orange-2);
 }
 #article-list #boardSearchForm input:focus {
-    border: 1px solid var(--nt-orange-2) !important;
+    border: 1px solid var(--nt-orange-2);
+    transition-duration: 0.3s;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus {
+    background-color: var(--nt-orange-2);
+    border-color: var(--nt-orange-2);
+}
+.pagination > .active > a:hover {
+    background-color: #0000;
+    color: var(--nt-orange-2);
+    border-color: var(--nt-orange-2);
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    border-color: var(--nt-orange-2);
+    color: var(--nt-orange-2);
+    background: #0000;
+}
+.pagination > li > a,
+.pagination > li > span {
+    border-color: #fff9;
+    background: var(--black-clear-def);
+    color: var(--nt-orange-2);
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.pagination > li.active:nth-child(2) > a,
+.pagination > li:first-child > span {
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+.input-group-btn > .btn {
+    border-color: #fff9;
+}
+.input-group-btn > .btn[type="button"] {
+    background-size: 240% auto !important;
+    border-right: 0;
+}
+.input-group-btn > .btn[type="submit"] {
+    background-size: 300% auto !important;
+    margin-left: 0;
+    border-left: 0;
+}
+.input-group-btn > .btn[type="submit"] .fa {
+    color: var(--nt-orange-2);
+    transition-duration: 0.3s;
+}
+.input-group-btn > .btn[type="submit"]:hover .fa,
+.input-group-btn > .btn[type="submit"]:focus .fa,
+.input-group-btn > .btn[type="submit"]:active .fa{
+    color: #fff !important;
     transition-duration: 0.3s;
 }
 
@@ -1618,6 +1865,7 @@ background-repeat: no-repeat;
     width: 48px;
     border-radius: 50px;
     opacity: 0.8;
+    filter: invert(100%);
     transition-duration: 0s;
 }
 #movetotop > img {
@@ -1625,11 +1873,11 @@ background-repeat: no-repeat;
 }
 footer > div.container::before {
     font-family: 'DIN';
-    content: "CSS Modified By ZENIXX";
+    content: "CSS Modified By ???";
     display: inline-block;
     color: white;
 }
-footer>div.container span:before {
+footer > div.container span:before {
     font-family: 'DIN';
     content: "";
     display: inline-block;
@@ -1638,31 +1886,66 @@ footer>div.container span:before {
 footer > div.container span {
     color: white;
 }
-.input-group-btn > .btn {
-    border-color: #fff9;
+.theme_btn_box, .theme_btn_box .theme_btn {
+    transition-duration: 0.3s;
 }
-.input-group-btn > .btn[type="button"] {
-    background-size: 240% auto !important;
+.theme_btn_box {
+    width: 54px;
+    height: 29px;
+    background: linear-gradient(-90deg, #fff 50%, var(--nt-orange-1) 0%);
+    background-size: 200% auto;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    padding: 3px 3px;
+    padding-right: 27px;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: none;
+    display: block;
+    margin: 50px auto 0;
 }
-.input-group-btn > .btn[type="submit"] {
-    background-size: 300% auto !important;
-    margin-left: 0;
+.theme_btn_box .theme_btn {
+    background-color: #ccc;
+    background-image: url('https://cdn.discordapp.com/attachments/780447643708293122/946398311642988584/tgd_sun.1.svg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    margin-top: -5px;
+    margin-left: -5px;
 }
 
 /* Dark-NT */
 * {
     font-family: 'Roboto', 'a고딕', sans-serif;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
     box-shadow: none !important;
 }
+::-webkit-scrollbar {
+  width: auto;
+}
+::-webkit-scrollbar-track {
+  background: #0000;
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
 html.darkmode {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/890182254360395796/NT_PV_3.png');
+    background: url('https://cdn.discordapp.com/attachments/921041068299010068/921043320120180746/NT_PV_3.png');
     /* background: #fff; */
     height: auto !important;
     cursor: default;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    scrollbar-color: #999 #0000;
 }
 html.darkmode body {
     background: transparent;
@@ -1677,6 +1960,10 @@ html.darkmode a {
 /* Body */
 html.darkmode a {
     text-decoration: none !important;
+    color: var(--nt-orange-2);
+}
+html.darkmode .input-group-btn i.fa-search,
+html.darkmode footer a {
     color: var(--nt-orange-2);
 }
 html.darkmode a:focus,
@@ -1709,9 +1996,9 @@ html.darkmode header #header-bar {
 }
 html.darkmode header #header-bar #header-top-notice,
 html.darkmode header #header-bar a.dropdown-toggle,
-html.darkmode header #header-bar #header-top-notice a{
-color:#fff;
-animation: FadeIn 0.6s;
+html.darkmode header #header-bar #header-top-notice a {
+    color: #fff;
+    animation: FadeIn 0.6s;
 }
 html.darkmode header #header-bar #header-top-notice strong.notice-badge {
     display: none;
@@ -1746,16 +2033,48 @@ html.darkmode img[src="https://upload.tgd.kr/icon/nologin.png"] {
     content: url(https://cdn.discordapp.com/attachments/780447643708293122/914405839262064670/89423246_p29.png);
 }
 html.darkmode img[alt="Broadcaster"] {
-  content: url(https://cdn.discordapp.com/attachments/780447643708293122/914377960927154196/Orange.png);
-  vertical-align: middle !important;
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921379831625687061/Broadcast.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Broadcaster"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921382625355120680/BroadcastOrig.svg);
+    transition-duration: 0.3s;
 }
 html.darkmode img[alt="Moderator"] {
-  content: url(https://cdn.discordapp.com/attachments/780447643708293122/914377961128464454/Blue.png);
-  vertical-align: middle !important;
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712036524740618/Moderator.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Moderator"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712046687539260/ModeratorOrig.svg);
+    transition-duration: 0.3s;
 }
 html.darkmode img[alt="Global Moderator"] {
-  content: url(https://cdn.discordapp.com/attachments/780447643708293122/914377961451446332/Gray.png);
-  vertical-align: middle !important;
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712096260005918/GlobalMod.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Global Moderator"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712108616433674/GlobalModOrig.svg);
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Staff"] {
+    height: 18px;
+    width: 18px;
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712160177008670/Staff.svg);
+    vertical-align: middle !important;
+    transition-duration: 0.3s;
+}
+html.darkmode img[alt="Staff"]:hover {
+    content: url(https://cdn.discordapp.com/attachments/921041068299010068/921712169077334076/StaffOrig.svg);
+    transition-duration: 0.3s;
 }
 
 /* Button */
@@ -1855,7 +2174,7 @@ html.darkmode .vote-btn[data-type="down"] span {
     line-height: 24px;
     color: var(--downvote);
 }
-html.darkmode .alert button.close>span {
+html.darkmode .alert button.close > span {
     color: #000;
 }
 html.darkmode .btn,
@@ -1871,7 +2190,7 @@ html.darkmode .btn.square {
     border-radius: 30px;
 }
 html.darkmode .btn-primary {
-    border-color: var(--nt-orange-2) !important;
+    border: 1px solid var(--nt-orange-2) !important;
     background: linear-gradient(-45deg, #0000 50%, var(--nt-orange-2) 0%);
     background-size: 240% auto;
     background-position-x: 100%;
@@ -1942,7 +2261,7 @@ html.darkmode .btn.square.btn-default.best.enable:focus {
 }
 html.darkmode .btn.square.btn-default.best > i.fa.fa-star {
     color: #efc839;
-    font-size: 12px;
+    font-size: 13px;
     vertical-align: middle;
 }
 html.darkmode .btn.square.btn-default.best > i.fa.fa-star:before {
@@ -1951,9 +2270,9 @@ html.darkmode .btn.square.btn-default.best > i.fa.fa-star:before {
 html.darkmode .btn.square.btn-default.best > i.fa.fa-star:after {
     content: " 개념글";
     color: #efc839;
-    font-size: 13.5px;
-    vertical-align: middle;
+    font-size: 12px;
     transition-duration: 0.3s;
+    font-family: 'Roboto', 'a고딕', sans-serif;
 }
 html.darkmode .btn.square.btn-default.best:hover i.fa.fa-star:before,
 html.darkmode .btn.square.btn-default.best:focus i.fa.fa-star:before,
@@ -1993,7 +2312,6 @@ html.darkmode .btn-outline-danger:focus {
 /* html.darkmode .btn.active,
 html.darkmode .btn:active {
 } */
-
 /* FontAwesome */
 html.darkmode small.favo > .fa-heart {
     color: #f75563;
@@ -2008,7 +2326,7 @@ html.darkmode .fa-clock-o {
     transform: scaleX(-1);
 }
 html.darkmode .fa-pencil:before {
-    content: "\f044";    
+    content: "\f044";
 }
 html.darkmode .fa-commenting:before {
     content: "\f075";
@@ -2026,22 +2344,26 @@ html.darkmode #article-list #article-option-area-toggle-btn .fa-eye-slash:before
     content: "\f129";
 }
 html.darkmode .vote-btn[data-type="up"] > .fa-thumbs-up:before,
-html.darkmode #article-votes > i.fa.fa-heart:before, .like > .fa-thumbs-up:before {
+html.darkmode #article-votes > i.fa.fa-heart:before,
+.like > .fa-thumbs-up:before {
     content: "\f005";
 }
 html.darkmode #article-content-wrapper .fa-bell-slash-o:before {
-    content: "\f024";    
+    content: "\f024";
 }
 html.darkmode #article-content-wrapper .fa-plus:before {
-    content: "\f02e";    
+    content: "\f02e";
 }
 
 /* Header */
-html.darkmode header .row > div:nth-child(1) > a{
-    height: 50px;
+html.darkmode header .row > div:nth-child(1) > a {
+    display: block;
+    width: 200px;
     margin-bottom: -4px;
-    content: url('https://cdn.discordapp.com/attachments/780447643708293122/897457988942585916/TGD.NT.svg');
     transition-duration: 0.3s;
+}
+html.darkmode header .row > div:nth-child(1) > a img {
+    content: url('https://cdn.discordapp.com/attachments/780447643708293122/897457988942585916/TGD.NT.svg');
 }
 /* html.darkmode header .row > div:nth-child(1) > a:hover {
     background: url('https://cdn.discordapp.com/attachments/780447643708293122/890955398448828416/TGD.KR-Orange.svg') no-repeat;
@@ -2078,7 +2400,7 @@ html.darkmode header #header-bar > .row {
     border-top: 4px solid var(--nt-orange-2);
     border-left: none;
     border-right: none;
-    border-bottom: 1px dotted #ccc;
+    border-bottom: 2px dotted #ccc;
 }
 html.darkmode header #header-bar #header-menu-right #userDropdown #notification-badge {
     background: var(--nt-orange-2);
@@ -2099,22 +2421,26 @@ html.darkmode .form-control:focus {
 }
 html.darkmode .modal-content {
     background: var(--black-clear-def);
+    border: 0;
 }
-html.darkmode :is(tbody, tfoot, thead) td, th {
+html.darkmode .table-bordered :is(tbody,
+tfoot,
+thead) td,
+th {
     border: 0 !important;
     vertical-align: middle !important;
 }
 html.darkmode .table-bordered {
     border: 0;
 }
-html.darkmode .table tfoot > tr {
+html.darkmode .table tfoot > tr,
+html.darkmode .modal-body table.table tr[style="background: #eee;"] {
     background: #0000 !important;
 }
 html.darkmode .form-control {
     border: 1px solid;
-    border-image: linear-gradient(to bottom, #fff6 5px, #0000 25px);
+    border-image: linear-gradient(to top, #fff6 5px, #0000 25px);
     border-image-slice: 1;
-    border-bottom: 2px solid var(--nt-orange-2);
     background: #0000;
     color: #fff;
 }
@@ -2138,7 +2464,6 @@ html.darkmode .panel-body li {
     border: 1px solid;
     border-image: linear-gradient(to bottom, #fff6 5px, #0000 25px);
     border-image-slice: 1;
-    border-bottom: 2px solid var(--nt-orange-2);
     border-radius: 0 !important;
     background: #0000;
 }
@@ -2158,30 +2483,76 @@ html.darkmode .alertify-logs > div {
 html.darkmode .alertify .alert > *,
 html.darkmode .alertify .dialog > * {
     background: var(--black-clear-def);
+    border: 0;
+}
+html.darkmode #notify-header h4 {
+    font-size: 36px;
+    padding: 5px 0 0 10px;
+}
+html.darkmode #notify-header #readall-area {
+    padding: 10px 10px 0 0;
+}
+html.darkmode #notify-header hr {
+    margin: 10px 0 0 10px;
+    visibility: hidden;
 }
 html.darkmode .notify-item.Y {
-    background: #0000;
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373728040976394/READED.svg);
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
 }
 html.darkmode .notify-item.N {
-    background: #0000;
-}
-html.darkmode .notify-item {
-    border-bottom: 0;
-}
-html.darkmode .notify-item:hover {
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373727806087198/UNREAD.svg);
+    background-color: #fff3;
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
     transition-duration: 0.3s;
-    background: linear-gradient(-90deg, #444 55px, #0000 100%);
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
+}
+html.darkmode .notify-item,
+html.darkmode .notify-item:last-child {
+    border: 0;
+}
+html.darkmode .notify-item.Y:hover {
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373728040976394/READED.svg);
     border-style: solid;
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
     border-image-slice: 1;
     border-width: 0 7px 0 0;
-    animation: Bright 1.5s linear infinite;
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%, 0%;
+    transition-duration: 0.3s;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
+}
+html.darkmode .notify-item.N:hover {
+    background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%), url(https://cdn.discordapp.com/attachments/921041068299010068/921373727806087198/UNREAD.svg);
+    background-color: #fff3;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
+    border-image-slice: 1;
+    border-width: 0 7px 0 0;
+    background-size: 200% auto, cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%, 0%;
+    transition-duration: 0.3s;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
+}
+html.darkmode .notify-item > .notify-content-area > a strong {
+    color:var(--nt-orange-2);
 }
 html.darkmode .notify-item > .notify-action-area > a.delete-notify {
     color: var(--nt-orange-2);
 }
 html.darkmode .notify-item > .notify-action-area > a.delete-notify:hover {
     background: #fff3;
+    color: var(--nt-orange-2);
 }
 
 /* Row */
@@ -2205,7 +2576,7 @@ html.darkmode #main-content > .frame {
     padding: 0 0 5em !important;
 }
 html.darkmode #content-area > #main.container > .row,
-html.darkmode header>#header-bar.container>.row:first-child {
+html.darkmode header > #header-bar.container > .row:first-child {
     background: var(--black-clear-def);
 }
 html.darkmode #info-area div,
@@ -2222,10 +2593,11 @@ html.darkmode #image-upload-form {
 html.darkmode #articleWriteForm .mt-2:nth-child(4) {
     margin: 0;
 }
-html.darkmode header>.container>.row:first-child {
+html.darkmode header > .container > .row:first-child {
     background: transparent;
 }
-html.darkmode :is(#header-menu-left, #header-menu-right) .fa,
+html.darkmode :is(#header-menu-left,
+#header-menu-right) .fa,
 html.darkmode .caret {
     color: var(--nt-orange-2)
 }
@@ -2239,9 +2611,11 @@ html.darkmode .col-xs-10.right {
     padding-left: 0;
     padding-right: 15px;
 }
-html.darkmode .col-xs-2>div:last-child,
-html.darkmode #article-list>div[style="background:#efefef;padding:10px 8px;"],
-html.darkmode .frame div[style="display:flex;background:#efefef;"] {
+html.darkmode .col-xs-2 > div:last-child,
+html.darkmode #article-list > div[style="background:#efefef;padding:10px 8px;"],
+html.darkmode .frame div[style="display:flex;background:#efefef;"],
+html.darkmode #main-menu > div[align="center"],
+html.darkmode .frame > div > div[style="display:flex;background:#efefef;"] {
     background: transparent !important;
     padding: 0 !important;
     border: 0 !important;
@@ -2289,32 +2663,42 @@ html.darkmode .fr-command.fr-btn:not(.fr-active) + .fr-dropdown-menu {
 html.darkmode .fr-toolbar {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
-    border-top: 5px solid var(--nt-orange-2);
-    background: var(--black-clear-def);
+    border: 0 !important;
+    border-top: 5px solid var(--nt-orange-2) !important;
+    background: var(--black-clear-def) !important;
     /* position: sticky !important;
 top: 0px !important; */
 }
 /* html.darkmode .fr-sticky-dummy {
 display: none !important;
 } */
-html.darkmode .fr-separator.fr-vs {
+html.darkmode .fr-separator {
+    background: #ebebeb;
     height: 38px;
     margin: 0 2px;
 }
 html.darkmode .fr-wrapper {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    min-height: 120px;
+    border: 0 !important;
+    min-height: 150px;
     max-height: 1000px;
     height: auto !important;
     background: #0000 !important;
 }
+html.darkmode textarea.fr-code {
+    background: #0000;
+    color: #fff;
+    transition-duration: 0.3s;
+}
 html.darkmode .fr-box.fr-basic .fr-element {
     color: #fff;
 }
-html.darkmode .fr-box.fr-basic .fr-element:focus {
+html.darkmode .fr-box.fr-basic .fr-element:focus,
+html.darkmode .fr-code:focus {
     color: #fff;
     background: #000;
+    transition-duration: 0.3s;
 }
 html.darkmode .fr-box,
 html.darkmode .fr-dropdown-menu,
@@ -2322,13 +2706,21 @@ html.darkmode .fr-popup {
     border-radius: 0 !important;
 }
 html.darkmode .fr-toolbar,
-html.darkmode .fr-toolbar .fr-command.fr-btn>.fa,
+html.darkmode .fr-toolbar .fr-command.fr-btn > .fa,
 html.darkmode .fr-popup .fr-command.fr-btn > .fa {
     color: #fff;
 }
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-active > .fa,
 html.darkmode .fr-popup .fr-command.fr-btn.fr-active > .fa {
     color: var(--nt-orange-2);
+}
+html.darkmode .fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command {
+    background-color: #0000;
+    color: var(--nt-orange-2) !important;
+}
+html.darkmode .fr-popup .fr-action-buttons button.fr-command:hover,
+html.darkmode .fr-popup .fr-action-buttons button.fr-command:focus {
+    color: var(--nt-orange-1) !important;
 }
 html.darkmode .fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
 html.darkmode .fr-popup .fr-command.fr-btn.fr-dropdown::after {
@@ -2349,20 +2741,25 @@ left: auto !important; */
     border-radius: 0;
     border: 0;
 }
+html.darkmode .fr-popup .fr-checkbox input:checked + span {
+    background: var(--nt-orange-2);
+    border-color: var(--nt-orange-2);
+}
 html.darkmode .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
+    border: 0;
     background: var(--black-clear-def);
 }
 html.darkmode .fr-desktop .fr-command:hover,
 html.darkmode .fr-desktop .fr-command:focus,
 html.darkmode .fr-desktop .fr-command.fr-btn-hover,
 html.darkmode .fr-desktop .fr-command.fr-expanded {
-    background: #fff9;
+    background: #fff6;
 }
 html.darkmode .fr-desktop .fr-command.fr-active:hover,
 html.darkmode .fr-desktop .fr-command.fr-active:focus,
 html.darkmode .fr-desktop .fr-command.fr-active.fr-btn-hover,
 html.darkmode .fr-desktop .fr-command.fr-active.fr-expanded {
-    background: #fffc;
+    background: #fff6;
 }
 html.darkmode .fr-btn-wrap button:first-child {
     margin: 0 5px !important;
@@ -2391,6 +2788,16 @@ html.darkmode .fr-popup .fr-input-line textarea:focus {
     border-bottom: solid 2px var(--nt-orange-2);
     transition: 0.3s;
 }
+html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
+    color: var(--nt-orange-2);
+}
+html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab:hover,
+html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab:focus {
+    color: var(--nt-orange-1);
+}
+html.darkmode .fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]::after {
+    background: var(--nt-orange-2);
+}
 html.darkmode .fr-popup .fr-action-buttons button.fr-command {
     color: var(--nt-orange-2);
     transition: 0.3s;
@@ -2405,12 +2812,12 @@ html.darkmode .fr-popup .fr-image-upload-layer:hover {
     background: #fff6;
 }
 html.darkmode div.fr-element.fr-view {
-    min-height: 118px !important;
+    min-height: 150px !important;
 }
 html.darkmode .fr-placeholder {
     font-size: 0 !important;
     line-height: 20px !important;
-    margin-top: -118px !important;
+    margin-top: -150px !important;
     padding: 16px 16px 26px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -2418,11 +2825,46 @@ html.darkmode .fr-placeholder {
     position: relative !important;
     z-index: 1 !important;
 }
-html.darkmode .fr-placeholder:before{
+html.darkmode .fr-placeholder:before {
     white-space: pre-wrap;
-    font-size:14px;
-    letter-spacing:-0.5px;
-    content:"내용을 작성해주세요.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며 \A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다."
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    content: "내용을 작성해주세요.\A친목, 욕설, 차별, 저격 등의 글은 삭제될 수 있으며\A음란물, 폭력물 등 트게더 규정에 위배되는 것을 게시하였을 경우 제재당할 수 있습니다.\A다크모드의 문제로 인해 본문과 배경의 색상이 고정됩니다. 다만 라이트모드에서는 정상적으로 표시됩니다."
+}
+html.darkmode #article-emoticon-dialog {
+    height: 391px;
+    width: 540px;
+    border: 0;
+    background: var(--black-clear-def);
+}
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-header {
+    background: transparent;
+}
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes {
+    scroll-snap-type: x mandatory;
+    height: 75px;
+}
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes > img {
+    scroll-snap-align: start;
+    height: 58px;
+    padding: 2px 1.4px;
+    border: 2px solid transparent;
+}
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes > img.active {
+    border: 2px solid var(--nt-orange-2);
+}
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-header #article-emoticon-dialog-header--emotes > img:hover,
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-header #articleemoticon-dialog-header--emotes > img.active {
+    background: #fffc;
+}
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-emote-list {
+    scroll-snap-type: y mandatory;
+    height: 316px;
+}
+html.darkmode #article-emoticon-dialog #article-emoticon-dialog-emote-list > img {
+    scroll-snap-align: start;
+    height: 104px;
+    width: 104px;
 }
 
 /* Article - Content */
@@ -2430,10 +2872,15 @@ html.darkmode #article-content-wrapper > .header {
     border-top: 2px solid var(--nt-orange-2);
     position: sticky;
     top: 0;
-    background: linear-gradient(-45deg, #0003 225px, #0009 0%) !important;
+    background: linear-gradient(-45deg, var(--black-clear-1) 225px, var(--black-clear-3) 0%) !important;
     z-index: 99;
     height: 42px;
     line-height: 20px;
+}
+html.darkmode #article-content p,
+html.darkmode #article-content span {
+  background-color: #0000 !important;
+  color: #ffffff !important;
 }
 html.darkmode #article-content-wrapper #article-content,
 html.darkmode #article-content-wrapper > .vote-area {
@@ -2444,12 +2891,8 @@ html.darkmode #article-content-wrapper > .vote-area {
 }
 html.darkmode #article-content-wrapper > .footer {
     background: #0000;
+    border: 0;
     padding: 0 0.8em;
-}
-html.darkmode #article-content:active, #article-content:active span {
-    background: #fff;
-    color: #000;
-    transition-delay: 0.3s;
 }
 
 /* Article - Info */
@@ -2480,20 +2923,21 @@ html.darkmode #article-info > h2 {
     font-weight: bold;
     white-space: normal;
 }
-html.darkmode span.category[style="color:#000000"], .nav-link[style="color:#000000"] {
-    color:#fff !important;
+html.darkmode span.category[style="color:#000000"],
+.nav-link[style="color:#000000"] {
+    color: #fff !important;
 }
 html.darkmode #article-info #article-info-writer {
     font-size: 0px;
     padding-left: 60px;
 }
-html.darkmode #article-info>#article-info-writer>strong {
-    font-size:12px;
+html.darkmode #article-info > #article-info-writer > strong {
+    font-size: 12px;
     vertical-align: middle;
 }
-html.darkmode #article-info>#article-info-writer>small {
-    font-size:12px;
-    padding:0 .5em;
+html.darkmode #article-info > #article-info-writer > small {
+    font-size: 12px;
+    padding: 0 .5em;
     vertical-align: middle;
 }
 html.darkmode #article-info #article-info-writer:hover {
@@ -2530,10 +2974,10 @@ html.darkmode [aria-label][data-balloon-pos][data-balloon-pos="down"]::after,
 html.darkmode [aria-label][data-balloon-pos][data-balloon-pos="down"]::before {
     border-radius: 30px;
 }
-html.darkmode #board-info #score-area .fa-trophy::before {
+/* html.darkmode #board-info #score-area .fa-trophy::before {
     content: url('https://cdn.discordapp.com/attachments/780447643708293122/890176551440777276/BPMIcon.png');
     opacity: 75%;
-}
+} */
 html.darkmode #board-info #viewers-area,
 html.darkmode #board-info #score-area {
     color: var(--nt-orange-2);
@@ -2555,6 +2999,7 @@ html.darkmode #board-info #viewers-area #viewers:before {
 html.darkmode #board-info #viewers-area #viewers:after {
     color: var(--nt-orange-2);
     content: "명 접속중";
+    opacity: 0;
     transition-duration: 0.3s;
 }
 html.darkmode #board-info #viewers-area #viewers:hover:before,
@@ -2580,14 +3025,14 @@ html.darkmode #board-info-profile-img {
     position: relative;
 }
 html.darkmode #board-info #board-info-bottom a:nth-child(3),
-html.darkmode #board-info #board-info-bottom a:nth-child(n+5) {
-    display:none;
+html.darkmode #board-info #board-info-bottom a:nth-child(n + 5) {
+    display: none;
 }
 html.darkmode #board-info:before {
     display: block;
     position: absolute;
     content: "";
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/912960359021813811/Just1.png');
+    background: url('https://cdn.discordapp.com/attachments/921041068299010068/921042743030075442/Just1Per.svg');
     background-size: contain;
     border-radius: 25px;
     height: 49px;
@@ -2618,11 +3063,11 @@ html.darkmode #article-list {
 html.darkmode #article-list #article-list-menu > .btn.cog {
     border-radius: 15px;
 }
-html.darkmode #article-list #article-option-area-toggle-btn {
-    margin-top: 2px !important;
-    height: 34px !important;
-    background: #0000 !important;
-    opacity: 1 !important;
+html.darkmode #article-list #article-option-area > #article-option-area-toggle-btn {
+    margin-top: 2px;
+    height: 34px;
+    background: #0000;
+    opacity: 1;
 }
 html.darkmode #article-list #article-option-area-toggle-btn:hover {
     background: #fff4 !important;
@@ -2631,25 +3076,70 @@ html.darkmode #article-list > .article-list-row > .item > .list-title > a {
     color: white;
 }
 html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer > span {
-  height: 18px;
-  max-width: 180px;
-  width: auto;
-  color: #ccc;
+    height: 18px;
+    max-width: 180px;
+    width: auto;
+    color: #ccc;
 }
 html.darkmode #article-list #article-list-category {
     border-top: 2px solid var(--nt-orange-2);
-    background: #0000;
+    border-bottom: 2px solid var(--nt-orange-2);
+    background: var(--black-clear-def);
     position: sticky;
+    height: 38px;
     top: 0;
     z-index: 18;
 }
+@media (min-width: 1400px) {
+    html.darkmode #article-list #article-list-category.can-float {
+        position:fixed;
+        background: var(--black-clear-def);
+        border-radius: 0;
+        transform: translate(650px, 72px);
+        height: auto;
+    }
+    html.darkmode #article-list #article-list-category.can-float > a {
+        background-color: transparent !important;
+        background-image: linear-gradient(-90deg, #666, #0000 50%, #0000 100%) !important;
+        background-size: 200% auto !important;
+        background-position-x: 0% !important;
+        background-repeat: no-repeat !important;
+        transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
+        transition-property: background, color;
+    }
+    html.darkmode #article-list #article-list-category > a::before,
+    html.darkmode #article-list #article-list-category > a::after {
+        z-index: 2;
+    }
+    html.darkmode #article-list #article-option-area > #article-option-area-toggle-btn {
+        margin-top: 2px;
+    }
+    html.darkmode #article-list #article-list-category.can-float > a:hover {
+        background-color: transparent !important;
+        background-image: linear-gradient(-90deg, #666, #0000 50%, #0000 100%) !important;
+        background-size: 200% auto !important;
+        background-position-x: 100% !important;
+        background-repeat: no-repeat !important;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
+        border-image-slice: 1;
+        border-width: 0 7px 0 0;
+        transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
+        transition-property: border, color;
+    }
+    html.darkmode #article-list #article-list-category > a::after {
+        display: none;
+    }
+}
 html.darkmode #article-list #article-list-category > a {
     line-height: 1.1;
-    background: #0000;
+    background-color: #0000 !important;
+    border-bottom: 0 !important;
     position: relative;
+    height: 34px;
 }
 html.darkmode #article-list #article-list-category > a.active {
-    background: #fff6;
+    background-color: #fff6 !important;
 }
 html.darkmode #article-list #article-list-category > a::after {
     bottom: 0;
@@ -2663,18 +3153,21 @@ html.darkmode #article-list #article-list-category > a::after {
     transition-duration: 0.3s;
 }
 html.darkmode #article-list #article-list-category > a:hover {
-    background: #fff6;
+    background-color: #fff6 !important;
 }
 html.darkmode #article-list #article-list-category > a:hover::before,
 html.darkmode #article-list #article-list-category > a:hover::after {
     transform: scaleX(1);
 }
 html.darkmode #article-list #article-list-category > a.active:focus {
-    color: var(--nt-orange-2);
+    color: var(--nt-orange-2) !important;
 }
 html.darkmode #article-list #article-list-category > a.active:hover {
     background: #fff6;
-    color: var(--nt-orange-2);
+    color: var(--nt-orange-2) !important;
+}
+html.darkmode #article-list #article-list-category #board-home-link-btn {
+    color: white;
 }
 html.darkmode #article-list > .article-list-row > .item > .list-header {
     border: 0;
@@ -2692,7 +3185,7 @@ html.darkmode #article-list > .article-list-row > .item > .list-title > .list-wr
     color: var(--nt-orange-2);
 }
 html.darkmode #article-list > .article-list-row > .item > .list-title > .list-writer.logged > span > img {
-  vertical-align: bottom;
+    vertical-align: bottom;
 }
 /* html.darkmode .list-writer.logged > span:after,
 html.darkmode .reply-writer.logged:after {
@@ -2705,44 +3198,58 @@ html.darkmode .article-list-row i.fa.fa-commenting-o {
 html.darkmode .reply-writer.logged:after {
     padding-left: 2.6px;
 }
-html.darkmode #article-list > .article-list-row {
+html.darkmode #article-list > .article-list-row,
+html.darkmode #article-list > div:nth-child(3).article-list-row {
     background: linear-gradient(-45deg, #0002 52.5px, #fff0 0%), linear-gradient(-90deg, #666, #0000 50%, #0000 100%) !important;
     border: 0;
     background-size: 100% auto, 200% auto !important;
     background-position-x: 100%, 0% !important;
     background-repeat: no-repeat !important;
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0,0,0.75,0) !important;
+    transition-property: background;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
 }
-html.darkmode #article-list > .article-list-row.notice {
-    background-image: linear-gradient(-45deg, #fff2 52.5px, #fff4 0%), linear-gradient(-90deg, #222, #0000 50%, #0000 100%) !important;
+html.darkmode #article-list > .article-list-row.notice,
+html.darkmode #article-list > div:nth-child(3).article-list-row.notice {
+    background: linear-gradient(-45deg, #fff2 52.5px, #fff4 0%), linear-gradient(-90deg, #222, #0000 50%, #0000 100%) !important;
+    background-color: transparent !important;
+    background-size: 100% auto, 200% auto !important;
+    background-position-x: 100%, 0% !important;
+    background-repeat: no-repeat !important;
 }
-html.darkmode #article-list > .article-list-row.hot {
+html.darkmode #article-list > .article-list-row.hot,
+html.darkmode #article-list > div:nth-child(3).article-list-row.hot {
     background-image: linear-gradient(-45deg, #fff0 52.5px, #fff2 0%), linear-gradient(-90deg, #444, #0000 50%, #0000 100%) !important;
 }
-html.darkmode #article-list > .article-list-row.active {
+html.darkmode #article-list > .article-list-row.active,
+html.darkmode #article-list > div:nth-child(3).article-list-row.active {
     background-image: linear-gradient(-45deg, #fff4 52.5px, #fff6 0%), linear-gradient(-90deg, #444, #0000 50%, #0000 100%) !important;
 }
-html.darkmode #article-list > .article-list-row:hover {
+html.darkmode #article-list > .article-list-row:hover,
+html.darkmode #article-list > div:nth-child(3).article-list-row:hover {
     background: linear-gradient(-45deg, #0002 52.5px, #fff0 0%), linear-gradient(-90deg, #666, #0000 50%, #0000 100%) !important;
     border-style: solid;
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
     border-image-slice: 1;
     border-width: 0 7px 0 0;
-    animation: Bright 1.5s linear infinite;
+    animation: none;
     background-size: 100% auto, 200% auto !important;
     background-repeat: no-repeat !important;
     background-position-x: 100%, 100% !important;
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
 }
-html.darkmode #article-list > .article-list-row.notice:hover {
+html.darkmode #article-list > .article-list-row.notice:hover,
+html.darkmode #article-list > div:nth-child(3).article-list-row.notice:hover {
     background-image: linear-gradient(-45deg, #fff2 52.5px, #fff4 0%), linear-gradient(-90deg, #222, #0000 50%, #0000 100%) !important;
 }
-html.darkmode #article-list > .article-list-row.hot:hover {
+html.darkmode #article-list > .article-list-row.hot:hover,
+html.darkmode #article-list > div:nth-child(3).article-list-row.hot:hover {
     background-image: linear-gradient(-45deg, #fff0 52.5px, #fff2 0%), linear-gradient(-90deg, #444, #0000 50%, #0000 100%) !important;
 }
-html.darkmode #article-list > .article-list-row.active:hover {
+html.darkmode #article-list > .article-list-row.active:hover,
+html.darkmode #article-list > div:nth-child(3).article-list-row.active:hover {
     background-image: linear-gradient(-45deg, #fff4 52.5px, #fff6 0%), linear-gradient(-90deg, #444, #0000 50%, #0000 100%) !important;
 }
 html.darkmode #article-list > .article-list-row > .item > .list-title > a:visited {
@@ -2810,9 +3317,8 @@ html.darkmode .input-group-btn.open .dropdown-menu {
 }
 html.darkmode #writerContextMenu {
     border: 1px solid;
-    border-image: linear-gradient(to bottom, #fff6 10px, #0000 50px);
+    border-image: linear-gradient(to top, #fff6 10px, #0000 50px);
     border-image-slice: 1;
-    border-bottom: 2px solid var(--nt-orange-2);
     background: #000c;
 }
 html.darkmode .dropdown-menu .divider {
@@ -2839,46 +3345,8 @@ html.darkmode .dropdown-menu > li > a > span {
     line-height: 30px !important;
 }
 html.darkmode #favoriteDropdownMenu > li > a,
-#latestDropdownMenu > li > a  {
+#latestDropdownMenu > li > a {
     padding: 0 0 0 6px;
-}
-html.darkmode .pagination > .active > a,
-html.darkmode .pagination > .active > a:focus {
-    background-color: var(--nt-orange-2);
-    border-color: var(--nt-orange-2);
-}
-html.darkmode .pagination > .active > a:hover {
-    background-color: #0000;
-    color: var(--nt-orange-2);
-    border-color: var(--nt-orange-2);
-}
-html.darkmode .pagination > li > a:focus,
-html.darkmode .pagination > li > a:hover,
-html.darkmode .pagination > li > span:focus,
-html.darkmode .pagination > li > span:hover {
-    border-color: var(--nt-orange-2);
-    color: var(--nt-orange-2);
-    background: #0000;
-}
-html.darkmode .pagination > li > a,
-html.darkmode .pagination > li > span {
-    background: var(--black-clear-def);
-    color: var(--nt-orange-2);
-}
-html.darkmode .pagination > li:first-child > a,
-html.darkmode .pagination > li:first-child > span {
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
-}
-html.darkmode .pagination > li.active:nth-child(2) > a,
-html.darkmode .pagination > li:first-child > span {
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
-}
-html.darkmode .pagination > li:last-child > a,
-.pagination > li:last-child > span {
-    border-top-right-radius: 17px;
-    border-bottom-right-radius: 17px;
 }
 
 /* Article - Reply */
@@ -2888,6 +3356,12 @@ html.darkmode div.list-writer.logged > span:hover {
 }
 html.darkmode #comment-write-form #comment-write-button-area {
     padding: 0 0.8em;
+}
+#comment-write-form #comment-write-button-area .pull-left {
+    margin-right: 8px;
+}
+#comment-write-form #comment-write-button-area .pull-right {
+    margin-left: 8px;
 }
 html.darkmode #commentWriteInfoForm > .left,
 #commentWriteInfoForm > .right {
@@ -2902,10 +3376,48 @@ html.darkmode #comment-write-form {
 html.darkmode .reply-content #comment-write-form {
     margin: 1em -9.8px;
 }
+html.darkmode #comment-emoticon-dialog {
+    height: 391px;
+    width: 540px;
+    border: 0;
+    background: var(--black-clear-def);
+}
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-header {
+    background: transparent;
+}
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes {
+    scroll-snap-type: x mandatory;
+    height: 75px;
+}
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img {
+    scroll-snap-align: start;
+    height: 58px;
+    padding: 2px 1.4px;
+    border: 2px solid transparent;
+}
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img.active {
+    border: 2px solid var(--nt-orange-2);
+}
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img:hover,
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-header #comment-emoticon-dialog-header--emotes > img.active {
+    background: #fffc;
+}
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-emote-list {
+    scroll-snap-type: y mandatory;
+    height: 316px;
+}
+html.darkmode #comment-emoticon-dialog #comment-emoticon-dialog-emote-list > img {
+    scroll-snap-align: start;
+    height: 104px;
+    width: 104px;
+}
 html.darkmode #article-content-wrapper,
 html.darkmode #article-reply-area #reply-real-area,
 html.darkmode #article-reply-area #reply-best-area {
     padding: 0 !important;
+}
+html.darkmode #article-comment a {
+    color: #fff;
 }
 html.darkmode .reply-header {
     position: sticky !important;
@@ -2913,29 +3425,42 @@ html.darkmode .reply-header {
     border: 0 !important;
 }
 html.darkmode #article-reply-area #reply-real-area .reply > .reply-header {
-    background: linear-gradient(-45deg, #0003 225px, #fff9 0%);
+    background: linear-gradient(-45deg, var(--black-clear-1) 225px, var(--black-clear-3) 0%);
 }
-
 html.darkmode #article-reply-area #reply-best-area .reply .reply-header,
 html.darkmode #article-reply-area #reply-best-area .reply:first-child:nth-last-child(1) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743432851161149/BEST.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743432851161149/BEST.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #ffb7b099 0%);
     background-size: cover;
 }
 html.darkmode #article-reply-area #reply-best-area .reply:nth-child(1) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743632055451678/BEST_1.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743632055451678/BEST_1.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #ffb7b099 0%);
     background-size: cover;
 }
 html.darkmode #article-reply-area #reply-best-area .reply:nth-child(2) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743759813963846/BEST_2.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743759813963846/BEST_2.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #bf898499 0%);
     background-size: cover;
 }
 html.darkmode #article-reply-area #reply-best-area .reply:nth-child(3) .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743871751553044/BEST_3.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff4ea99 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/896743871751553044/BEST_3.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #805b5899 0%);
     background-size: cover;
 }
 html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-writer,
 html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer {
+    color: #fff !important;
+}
+html.darkmode #article-reply-area #reply-real-area .reply.active > .reply-header > .reply-writer,
+html.darkmode #article-reply-area #reply-best-area .reply.active > .reply-header > .reply-writer {
     color: #000 !important;
+}
+html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a,
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
+    color: var(--nt-orange-2);
+}
+html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a:hover,
+html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a:focus,
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a:hover,
+html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a:focus {
+    color: var(--nt-orange-1);
 }
 html.darkmode .reply-writer > .label-danger {
     display: none;
@@ -2952,28 +3477,16 @@ html.darkmode #article-reply-area #reply-best-area .reply.active {
 }
 html.darkmode #article-reply-area #reply-real-area .reply.active > .reply-header,
 html.darkmode #article-reply-area #reply-best-area .reply.active > .reply-header {
-    background: url('https://cdn.discordapp.com/attachments/780447643708293122/897791711298846750/SELECTED.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff9e599 0%);
+    background: url('https://cdn.discordapp.com/attachments/780447643708293122/897791711298846750/SELECTED.svg') no-repeat, linear-gradient(-45deg, #0003 225px, #fff9ac99 0%);
     background-size: cover;
     animation: SlideIn 0.6s;
 }
-html.darkmode #article-reply-area #reply-real-area .reply:active {
-    background: #fff;
-    color: #000;
-    transition-delay: 0.3s;
-}
-html.darkmode #article-reply-area #reply-best-area .reply:active {
-    background: #fff4ea;
-    color: #000;
-    transition-delay: 0.3s;
-}
-html.darkmode #article-reply-area #reply-real-area .reply.active:active,
-html.darkmode #article-reply-area #reply-best-area .reply.active:active {
-    background: #fff9e5;
-    color: #000;
-    transition-delay: 0.3s;
-}
 html.darkmode #article-reply-area #reply-real-area .reply > .reply-header > small.code,
 html.darkmode #article-reply-area #reply-best-area .reply > .reply-header > small.code {
+    color: #ccc;
+}
+html.darkmode #article-reply-area #reply-real-area .reply.active > .reply-header > small.code,
+html.darkmode #article-reply-area #reply-best-area .reply.active > .reply-header > small.code {
     color: #333;
 }
 html.darkmode #article-reply-area #reply-real-area .reply,
@@ -3009,8 +3522,12 @@ html.darkmode #article-neighbor-list > div {
     background-size: 200% auto;
     background-position-x: 0%;
     background-repeat: no-repeat;
-    transition-timing-function: cubic-bezier(0,0,0.75,0) !important;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
     transition-duration: 0.3s;
+    width: 100%;
+    height: 34px;
+    padding: 0;
+    display: table;
 }
 html.darkmode #article-neighbor-list > div:hover {
     background: linear-gradient(-90deg, #666, #0000 50%, #0000 100%);
@@ -3021,17 +3538,13 @@ html.darkmode #article-neighbor-list > div:hover {
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%) !important;
     border-image-slice: 1 !important;
     border-width: 0 7px 0 0 !important;
-    animation: Bright 1.5s linear infinite;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
     transition-duration: 0.3s;
 }
 html.darkmode #article-neighbor-list > div:hover span.author {
-    border-style: solid !important;
-    border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%) !important;
-    border-image-slice: 1 !important;
-    border-width: 0 7px 0 0 !important;
-    animation: Bright 1.5s linear infinite;
     transition-duration: 0.3s;
+    width: 180px;
+    max-width: 180px;
 }
 html.darkmode #article-neighbor-list {
     padding: 0;
@@ -3046,10 +3559,16 @@ html.darkmode #article-neighbor-list > div > a {
 html.darkmode #article-neighbor-list > div > span.author {
     padding-right: 1em;
     color: #fff;
+    width: 180px;
+    max-width: 180px;
     transition-duration: 0.3s;
 }
 
 /* Aside - Navigation */
+html.darkmode #main #main-menu {
+    position: sticky;
+    top: 0;
+}
 html.darkmode #main .menu-wrapper {
     border: 0;
     letter-spacing: -0.05em !important;
@@ -3077,7 +3596,7 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area a {
     background-size: 200% auto;
     background-position-x: 0%;
     background-repeat: no-repeat;
-    transition-timing-function: cubic-bezier(0,0,0.75,0) !important;
+    transition-timing-function: cubic-bezier(0, 0, 0.75, 0) !important;
     text-align: left;
     padding: 0.5em 1.4em 0.5em 0.7em !important;
     word-break: keep-all;
@@ -3141,10 +3660,10 @@ html.darkmode #main .menu-wrapper #fav-shortcut-area a:hover {
     border-image: linear-gradient(to bottom, var(--nt-orange-1), var(--nt-orange-2) 100%);
     border-image-slice: 1;
     border-width: 0 7px 0 0;
-    animation: Bright 1.5s linear infinite;
-    transition-timing-function: cubic-bezier(0.25,1,1,1) !important;
+    transition-timing-function: cubic-bezier(0.25, 1, 1, 1) !important;
     text-align: left;
     word-break: keep-all;
+    transition-property: border;
 }
 /* html.darkmode #main .menu-wrapper > a:after {
 content: "";
@@ -3179,20 +3698,85 @@ html.darkmode #article-list #boardSearchForm {
     padding-bottom: 20px;
     height: unset;
 }
-html.darkmode #article-list #boardSearchForm input {
+html.darkmode #article-list #boardSearchForm .form-control {
+    height: 31.15px;
+    background: #0000;
     border: 1px solid #fff9;
     z-index: 20;
     transition-duration: 0.3s;
 }
-html.darkmode #article-list #boardSearchForm .form-control {
-    height: 31.15px;
+html.darkmode #article-list #boardSearchForm .form-control:hover {
+    border: 1px solid var(--nt-orange-2);
 }
-html.darkmode #article-list #boardSearchForm input:hover {
-    border: 1px solid var(--nt-orange-2) !important;
-}
-html.darkmode #article-list #boardSearchForm input:focus {
-    border: 1px solid var(--nt-orange-2) !important;
+html.darkmode #article-list #boardSearchForm .form-control:focus {
+    border: 1px solid var(--nt-orange-2);
     transition-duration: 0.3s;
+}
+html.darkmode .input-group-btn > .btn.square {
+    border-color: #fff9;
+}
+html.darkmode .input-group-btn > .btn[type="button"] {
+    background-size: 240% auto !important;
+    border-right: none;
+}
+html.darkmode .input-group-btn > .btn[type="submit"] {
+    background-size: 300% auto !important;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+}
+html.darkmode .input-group-btn > .btn[type="submit"] .fa {
+    color: var(--nt-orange-2);
+    transition-duration: 0.3s;
+}
+html.darkmode .input-group-btn > .btn[type="submit"]:hover .fa,
+html.darkmode .input-group-btn > .btn[type="submit"]:focus .fa,
+html.darkmode .input-group-btn > .btn[type="submit"]:active .fa{
+    color: #fff !important;
+    transition-duration: 0.3s;
+}
+html.darkmode .pagination > .active > a {
+    color: #fff;
+}
+html.darkmode .pagination > .active > a,
+html.darkmode .pagination > .active > a:focus {
+    background-color: var(--nt-orange-2);
+    border-color: var(--nt-orange-2);
+}
+html.darkmode .pagination > .active > a:hover {
+    background-color: #0000;
+    color: var(--nt-orange-2);
+    border-color: var(--nt-orange-2);
+}
+html.darkmode .pagination > li > a:focus,
+html.darkmode .pagination > li > a:hover,
+html.darkmode .pagination > li > span:focus,
+html.darkmode .pagination > li > span:hover {
+    border-color: var(--nt-orange-2);
+    color: var(--nt-orange-2);
+    background: #0000;
+}
+html.darkmode .pagination > li > a,
+html.darkmode .pagination > li > span {
+    background: var(--black-clear-def);
+    color: var(--nt-orange-2);
+    border-color: #fff9;
+}
+html.darkmode .pagination > li:first-child > a,
+html.darkmode .pagination > li:first-child > span {
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+html.darkmode .pagination > li.active:nth-child(2) > a,
+html.darkmode .pagination > li:first-child > span {
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+html.darkmode .pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
 }
 
 /* Footer */
@@ -3202,6 +3786,7 @@ html.darkmode #movetotop {
     width: 48px;
     border-radius: 50px;
     opacity: 0.8;
+    filter: none;
     transition-duration: 0s;
 }
 html.darkmode #movetotop > img {
@@ -3209,26 +3794,44 @@ html.darkmode #movetotop > img {
 }
 html.darkmode footer > div.container::before {
     font-family: 'DIN';
-    content: "CSS Modified By ZENIXX";
+    content: "CSS Modified By ";
     display: inline-block;
     color: white;
 }
-html.darkmode footer>div.container span:before {
+html.darkmode footer > div.container span:before {
     font-family: 'DIN';
-    content: "";
+    content: "ZENIXX";
     display: inline-block;
     color: white;
 }
 html.darkmode footer > div.container span {
     color: white;
 }
-html.darkmode .input-group-btn > .btn {
-    border-color: #fff9;
+html.darkmode .theme_btn_box, html.darkmode .theme_btn_box .theme_btn {
+    transition-duration: 0.3s;
 }
-html.darkmode .input-group-btn > .btn[type="button"] {
-    background-size: 240% auto !important;
+html.darkmode .theme_btn_box {
+    width: 54px;
+    height: 29px;
+    background: linear-gradient(-90deg, #fff 50%, var(--nt-orange-1) 0%);
+    background-size: 200% auto;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+    padding: 3px 3px;
+    padding-left: 27px;
+    box-sizing: border-box;
+    z-index: 999;
 }
-html.darkmode .input-group-btn > .btn[type="submit"] {
-    background-size: 300% auto !important;
-    margin-left: 0;
+html.darkmode .theme_btn_box .theme_btn {
+    background-color: var(--nt-orange-2);
+    background-image: url('https://cdn.discordapp.com/attachments/780447643708293122/946397457351336056/tgd_moon.1.svg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    margin-left: -3.5px;
 }
